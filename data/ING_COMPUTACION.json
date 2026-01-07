@@ -1,0 +1,66 @@
+{
+  "career": "Ingeniería en Computación",
+  "semesters": [
+    {
+      "number": 1,
+      "subjects": [
+        { "id": "EFS01202", "name": "Educación Física y Salud", "blocks": 2, "prereq": [] },
+        { "id": "GAN01404", "name": "Geometría Analítica", "blocks": 4, "prereq": [] },
+        { "id": "LOG01404", "name": "Lógica", "blocks": 4, "prereq": [] },
+        { "id": "MAI01506", "name": "Matemática I", "blocks": 6, "prereq": [] },
+        { "id": "VEC01202", "name": "Venezuela Contemporánea", "blocks": 2, "prereq": [] }
+      ]
+    },
+    {
+      "number": 2,
+      "subjects": [
+        { "id": "ALI02304", "name": "Álgebra Lineal", "blocks": 4, "prereq": ["GAN01404", "MAI01506"] },
+        { "id": "CIN02303", "name": "Creatividad e Inventiva", "blocks": 3, "prereq": ["LOG01404"] },
+        { "id": "FIS02405", "name": "Física I", "blocks": 5, "prereq": ["GAN01404", "MAI01506"] },
+        { "id": "MAI02506", "name": "Matemática II", "blocks": 6, "prereq": ["MAI01506"] },
+        { "id": "PRO02305", "name": "Programación I", "blocks": 5, "prereq": [] }
+      ]
+    },
+    {
+      "number": 3,
+      "subjects": [
+        { "id": "ING03303", "name": "Inglés I", "blocks": 3, "prereq": [] },
+        { "id": "EDI03304", "name": "Ecuaciones Diferenciales", "blocks": 4, "prereq": ["MAI02506"] },
+        { "id": "FIS03405", "name": "Física II", "blocks": 5, "prereq": ["FIS02405", "MAI02506"] },
+        { "id": "IIN03202", "name": "Introducción a la Ingeniería", "blocks": 2, "prereq": [] },
+        { "id": "MAI03304", "name": "Matemática III", "blocks": 4, "prereq": ["MAI02506"] },
+        { "id": "PRO03305", "name": "Programación II", "blocks": 5, "prereq": ["PRO02305"] }
+      ]
+    },
+    {
+      "number": 4,
+      "subjects": [
+        { "id": "FEL04304", "name": "Fundamentos de la Electrónica", "blocks": 4, "prereq": ["FIS03405", "EDI03304"] },
+        { "id": "AES04305", "name": "Algoritmos y Estructura I", "blocks": 5, "prereq": ["PRO03305"] },
+        { "id": "LSI04304", "name": "Lógica Simbólica", "blocks": 4, "prereq": ["LOG01404"] },
+        { "id": "ETD04304", "name": "Estadística", "blocks": 4, "prereq": ["MAI02506"] },
+        { "id": "PRO04405", "name": "Programación III", "blocks": 5, "prereq": ["PRO03305"] }
+      ]
+    },
+    {
+      "number": 5,
+      "subjects": [
+        { "id": "EDI05405", "name": "Estructuras Discretas I", "blocks": 5, "prereq": ["LSI04304"] },
+        { "id": "AES05305", "name": "Algoritmos y Estructura II", "blocks": 5, "prereq": ["AES04305"] },
+        { "id": "DLO05304", "name": "Diseño Lógico", "blocks": 4, "prereq": ["FEL04304"] },
+        { "id": "CNU05405", "name": "Cálculo Numérico", "blocks": 5, "prereq": ["MAI03304", "EDI03304"] },
+        { "id": "SOP05406", "name": "Sistemas Operativos I", "blocks": 6, "prereq": ["PRO04405"] }
+      ]
+    },
+    {
+      "number": 6,
+      "subjects": [
+        { "id": "SBD06305", "name": "Sistemas de Bases de Datos I", "blocks": 5, "prereq": ["AES05305"] },
+        { "id": "ODC06304", "name": "Organización del Computador", "blocks": 4, "prereq": ["DLO05304"] },
+        { "id": "CDA06304", "name": "Comunicación de Datos I", "blocks": 4, "prereq": ["SOP05406"] },
+        { "id": "ING06303", "name": "Inglés II", "blocks": 3, "prereq": ["ING03303"] },
+        { "id": "PCO06304", "name": "Programación Concurrente", "blocks": 4, "prereq": ["SOP05406"] }
+      ]
+    }
+  ]
+}

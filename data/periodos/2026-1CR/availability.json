@@ -1,0 +1,191 @@
+{
+  "P_EFS": [
+    "Lunes_07:00", "Lunes_07:45",
+    "Miércoles_08:30", "Miércoles_09:15",
+    "Jueves_10:00", "Jueves_10:45",
+    "Viernes_11:30", "Viernes_12:15"
+  ],
+  "P_GAN": [
+    "Lunes_08:30", "Lunes_09:15",
+    "Martes_07:45", "Martes_08:30",
+    "Jueves_09:15", "Jueves_10:00",
+    "Viernes_10:45", "Viernes_11:30"
+  ],
+  "P_LOG": [
+    "Martes_07:00", "Martes_07:45",
+    "Miércoles_10:00", "Miércoles_10:45",
+    "Jueves_08:30", "Jueves_09:15",
+    "Viernes_11:30", "Viernes_12:15"
+  ],
+  "P_MAI1": [
+    "Lunes_10:00", "Lunes_10:45",
+    "Martes_08:30", "Martes_09:15",
+    "Jueves_07:45", "Jueves_08:30",
+    "Viernes_07:00", "Viernes_07:45"
+  ],
+  "P_VEC": [
+    "Miércoles_07:00", "Miércoles_07:45",
+    "Viernes_08:30", "Viernes_09:15"
+  ],
+  "P_ALI": [
+    "Lunes_07:45", "Lunes_08:30",
+    "Martes_09:15", "Martes_10:00",
+    "Jueves_11:30", "Jueves_12:15",
+    "Viernes_10:00", "Viernes_10:45"
+  ],
+  "P_CIN": [
+    "Martes_10:45", "Martes_11:30",
+    "Miércoles_07:45", "Miércoles_08:30",
+    "Viernes_07:45", "Viernes_08:30"
+  ],
+  "P_FIS1": [
+    "Lunes_09:15", "Lunes_10:00",
+    "Miércoles_10:45", "Miércoles_11:30",
+    "Jueves_07:00", "Jueves_07:45",
+    "Viernes_08:30", "Viernes_09:15",
+    "Sábado_08:30", "Sábado_09:15"
+  ],
+  "P_MAI2": [
+    "Martes_07:00", "Martes_07:45",
+    "Miércoles_08:30", "Miércoles_09:15",
+    "Jueves_10:00", "Jueves_10:45",
+    "Viernes_10:45", "Viernes_11:30",
+    "Sábado_07:00", "Sábado_07:45"
+  ],
+  "P_PRO1": [
+    "Lunes_11:30", "Lunes_12:15",
+    "Miércoles_07:00", "Miércoles_07:45",
+    "Jueves_08:30", "Jueves_09:15",
+    "Viernes_07:00", "Viernes_07:45",
+    "Sábado_10:00", "Sábado_10:45"
+  ],
+  "P_ING1": [
+    "Lunes_07:00", "Lunes_07:45",
+    "Martes_11:30", "Martes_12:15",
+    "Jueves_09:15", "Jueves_10:00"
+  ],
+  "P_EDI1": [
+    "Martes_08:30", "Martes_09:15",
+    "Miércoles_10:45", "Miércoles_11:30",
+    "Viernes_09:15", "Viernes_10:00",
+    "Sábado_07:45", "Sábado_08:30"
+  ],
+  "P_FIS2": [
+    "Lunes_10:45", "Lunes_11:30",
+    "Miércoles_07:45", "Miércoles_08:30",
+    "Jueves_10:45", "Jueves_11:30",
+    "Viernes_07:45", "Viernes_08:30",
+    "Sábado_09:15", "Sábado_10:00"
+  ],
+  "P_IIN": [
+    "Martes_10:00", "Martes_10:45",
+    "Jueves_07:45", "Jueves_08:30"
+  ],
+  "P_MAI3": [
+    "Lunes_08:30", "Lunes_09:15",
+    "Miércoles_09:15", "Miércoles_10:00",
+    "Viernes_11:30", "Viernes_12:15",
+    "Sábado_10:45", "Sábado_11:30"
+  ],
+  "P_PRO2": [
+    "Martes_07:45", "Martes_08:30",
+    "Jueves_07:00", "Jueves_07:45",
+    "Viernes_10:00", "Viernes_10:45",
+    "Sábado_07:00", "Sábado_07:45",
+    "Sábado_08:30", "Sábado_09:15"
+  ],
+  "P_FEL": [
+    "Lunes_07:00", "Lunes_07:45",
+    "Martes_09:15", "Martes_10:00",
+    "Miércoles_11:30", "Miércoles_12:15",
+    "Jueves_08:30", "Jueves_09:15"
+  ],
+  "P_AES1": [
+    "Lunes_09:15", "Lunes_10:00",
+    "Martes_10:45", "Martes_11:30",
+    "Miércoles_07:00", "Miércoles_07:45",
+    "Viernes_07:45", "Viernes_08:30",
+    "Sábado_11:30", "Sábado_12:15"
+  ],
+  "P_LSI": [
+    "Martes_08:30", "Martes_09:15",
+    "Miércoles_10:00", "Miércoles_10:45",
+    "Jueves_07:45", "Jueves_08:30",
+    "Viernes_10:45", "Viernes_11:30"
+  ],
+  "P_ETD": [
+    "Lunes_10:45", "Lunes_11:30",
+    "Miércoles_08:30", "Miércoles_09:15",
+    "Jueves_10:00", "Jueves_10:45",
+    "Viernes_07:00", "Viernes_07:45"
+  ],
+  "P_PRO3": [
+    "Lunes_11:30", "Lunes_12:15",
+    "Martes_07:00", "Martes_07:45",
+    "Miércoles_07:45", "Miércoles_08:30",
+    "Jueves_09:15", "Jueves_10:00",
+    "Sábado_09:15", "Sábado_10:00"
+  ],
+  "P_EDI2": [
+    "Martes_10:45", "Martes_11:30",
+    "Miércoles_10:45", "Miércoles_11:30",
+    "Jueves_07:00", "Jueves_07:45",
+    "Viernes_08:30", "Viernes_09:15",
+    "Sábado_07:45", "Sábado_08:30"
+  ],
+  "P_AES2": [
+    "Lunes_07:45", "Lunes_08:30",
+    "Miércoles_09:15", "Miércoles_10:00",
+    "Jueves_10:45", "Jueves_11:30",
+    "Viernes_09:15", "Viernes_10:00"
+  ],
+  "P_DLO": [
+    "Martes_07:00", "Martes_07:45",
+    "Miércoles_08:30", "Miércoles_09:15",
+    "Jueves_10:00", "Jueves_10:45",
+    "Viernes_11:30", "Viernes_12:15"
+  ],
+  "P_CNU": [
+    "Lunes_08:30", "Lunes_09:15",
+    "Martes_10:45", "Martes_11:30",
+    "Miércoles_07:45", "Miércoles_08:30",
+    "Viernes_10:00", "Viernes_10:45"
+  ],
+  "P_SOP1": [
+    "Lunes_07:00", "Lunes_07:45",
+    "Martes_08:30", "Martes_09:15",
+    "Jueves_10:45", "Jueves_11:30",
+    "Viernes_07:45", "Viernes_08:30",
+    "Sábado_10:00", "Sábado_10:45"
+  ],
+  "P_SBD": [
+    "Martes_09:15", "Martes_10:00",
+    "Miércoles_11:30", "Miércoles_12:15",
+    "Jueves_08:30", "Jueves_09:15",
+    "Viernes_07:00", "Viernes_07:45",
+    "Sábado_08:30", "Sábado_09:15"
+  ],
+  "P_ODC": [
+    "Lunes_10:45", "Lunes_11:30",
+    "Miércoles_07:00", "Miércoles_07:45",
+    "Jueves_07:45", "Jueves_08:30",
+    "Viernes_09:15", "Viernes_10:00"
+  ],
+  "P_CDA": [
+    "Martes_07:45", "Martes_08:30",
+    "Miércoles_10:00", "Miércoles_10:45",
+    "Jueves_09:15", "Jueves_10:00",
+    "Viernes_10:45", "Viernes_11:30"
+  ],
+  "P_ING2": [
+    "Lunes_09:15", "Lunes_10:00",
+    "Miércoles_08:30", "Miércoles_09:15",
+    "Viernes_08:30", "Viernes_09:15"
+  ],
+  "P_PCO": [
+    "Martes_11:30", "Martes_12:15",
+    "Jueves_07:00", "Jueves_07:45",
+    "Viernes_11:30", "Viernes_12:15",
+    "Sábado_07:00", "Sábado_07:45"
+  ]
+}

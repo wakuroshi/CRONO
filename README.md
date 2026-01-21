@@ -70,3 +70,12 @@ python main.py --career ING_COMPUTACION.json --period 2026-1CR --time-limit 60
 ## 📄 Formato de Salida
 
 El sistema generará archivos JSON individuales por cada semestre en la carpeta outputs/. Cada archivo contiene el detalle de las materias, el profesor asignado y los bloques específicos (día y hora).
+
+## 🪡 TO-DO
+
+- Cruzado de multiples carreras, generar varias carreras al mismo tiempo a partir de los datos conocidos o si ya se predifinio el horario de una carrera la nueva generada no choque con esta
+
+- GUI
+
+- Expandir versatilidad (generacion manual asistida en vez de solo automatica, parametrización del algoritmo y constraints)
+

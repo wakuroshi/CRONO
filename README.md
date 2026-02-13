@@ -25,7 +25,7 @@ pip install ortools
 
 ## 📂 Estructura del Proyecto
 
-`CRONO/
+```CRONO/
 ├── data/
 │   ├── ING_COMPUTACION.json       # Definición de la malla curricular
 │   └── periodos/
@@ -35,7 +35,7 @@ pip install ortools
 ├── outputs/                        # Horarios generados por semestre
 ├── main.py                         # Punto de entrada del script
 └── solver.py                       # El "cerebro" (Lógica de OR-Tools)
-`
+```
 
 ## ⚙️ Cómo Funciona
 

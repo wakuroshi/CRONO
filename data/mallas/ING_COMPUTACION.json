@@ -37,26 +37,19 @@
           "id": "GRAL_MAT102",
           "name": "Matemática II",
           "blocks": 6,
-          "prereq": [
-            "GRAL_MAT101"
-          ]
+          "prereq": ["GRAL_MAT101"]
         },
         {
           "id": "GRAL_FIS102",
           "name": "Física II",
           "blocks": 4,
-          "prereq": [
-            "GRAL_FIS101",
-            "GRAL_MAT101"
-          ]
+          "prereq": ["GRAL_FIS101", "GRAL_MAT101"]
         },
         {
           "id": "COMP_PROG102",
           "name": "Algoritmos y Programación II",
           "blocks": 6,
-          "prereq": [
-            "COMP_PROG101"
-          ]
+          "prereq": ["COMP_PROG101"]
         },
         {
           "id": "COMP_LOG102",
@@ -73,33 +66,25 @@
           "id": "GRAL_MAT103",
           "name": "Matemática III",
           "blocks": 6,
-          "prereq": [
-            "GRAL_MAT102"
-          ]
+          "prereq": ["GRAL_MAT102"]
         },
         {
           "id": "COMP_EDD103",
           "name": "Estructuras de Datos",
           "blocks": 6,
-          "prereq": [
-            "COMP_PROG102"
-          ]
+          "prereq": ["COMP_PROG102"]
         },
         {
           "id": "COMP_ORG103",
           "name": "Organización del Computador",
           "blocks": 4,
-          "prereq": [
-            "COMP_LOG102"
-          ]
+          "prereq": ["COMP_LOG102"]
         },
         {
           "id": "GRAL_EST103",
           "name": "Probabilidades y Estadística",
           "blocks": 4,
-          "prereq": [
-            "GRAL_MAT102"
-          ]
+          "prereq": ["GRAL_MAT102"]
         }
       ]
     }

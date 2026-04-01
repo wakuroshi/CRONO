@@ -1,0 +1,135 @@
+{
+  "career": "Ingeniería de Computación",
+  "period": "2026-1CR",
+  "semester": 3,
+  "results": [
+    {
+      "id": "GRAL_MAT103",
+      "nombre": "Matemática III",
+      "profesor": "PROF_CIENCIAS_B",
+      "horario": [
+        {
+          "index": 15,
+          "dia": "Martes",
+          "bloque_id": 5
+        },
+        {
+          "index": 16,
+          "dia": "Martes",
+          "bloque_id": 6
+        },
+        {
+          "index": 17,
+          "dia": "Martes",
+          "bloque_id": 7
+        },
+        {
+          "index": 18,
+          "dia": "Martes",
+          "bloque_id": 8
+        },
+        {
+          "index": 38,
+          "dia": "Jueves",
+          "bloque_id": 8
+        },
+        {
+          "index": 39,
+          "dia": "Jueves",
+          "bloque_id": 9
+        }
+      ]
+    },
+    {
+      "id": "COMP_EDD103",
+      "nombre": "Estructuras de Datos",
+      "profesor": "PROF_COMP_ALGO",
+      "horario": [
+        {
+          "index": 5,
+          "dia": "Lunes",
+          "bloque_id": 5
+        },
+        {
+          "index": 6,
+          "dia": "Lunes",
+          "bloque_id": 6
+        },
+        {
+          "index": 7,
+          "dia": "Lunes",
+          "bloque_id": 7
+        },
+        {
+          "index": 35,
+          "dia": "Jueves",
+          "bloque_id": 5
+        },
+        {
+          "index": 36,
+          "dia": "Jueves",
+          "bloque_id": 6
+        },
+        {
+          "index": 37,
+          "dia": "Jueves",
+          "bloque_id": 7
+        }
+      ]
+    },
+    {
+      "id": "COMP_ORG103",
+      "nombre": "Organización del Computador",
+      "profesor": "PROF_COMP_HARD",
+      "horario": [
+        {
+          "index": 0,
+          "dia": "Lunes",
+          "bloque_id": 0
+        },
+        {
+          "index": 1,
+          "dia": "Lunes",
+          "bloque_id": 1
+        },
+        {
+          "index": 4,
+          "dia": "Lunes",
+          "bloque_id": 4
+        },
+        {
+          "index": 21,
+          "dia": "Miércoles",
+          "bloque_id": 1
+        }
+      ]
+    },
+    {
+      "id": "GRAL_EST103",
+      "nombre": "Probabilidades y Estadística",
+      "profesor": "PROF_CIENCIAS_B",
+      "horario": [
+        {
+          "index": 19,
+          "dia": "Martes",
+          "bloque_id": 9
+        },
+        {
+          "index": 27,
+          "dia": "Miércoles",
+          "bloque_id": 7
+        },
+        {
+          "index": 28,
+          "dia": "Miércoles",
+          "bloque_id": 8
+        },
+        {
+          "index": 29,
+          "dia": "Miércoles",
+          "bloque_id": 9
+        }
+      ]
+    }
+  ]
+}

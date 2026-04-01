@@ -1,0 +1,32 @@
+{
+  "career": "Ingeniería Civil",
+  "semesters": [
+    {
+      "number": 1,
+      "subjects": [
+        { "id": "GRAL_MAT101", "name": "Matemática I", "blocks": 6, "prereq": [] },
+        { "id": "GRAL_FIS101", "name": "Física I", "blocks": 4, "prereq": [] },
+        { "id": "CIV_DIB101", "name": "Dibujo de Ingeniería", "blocks": 4, "prereq": [] },
+        { "id": "GRAL_LIN101", "name": "Inglés Técnico I", "blocks": 2, "prereq": [] }
+      ]
+    },
+    {
+      "number": 2,
+      "subjects": [
+        { "id": "GRAL_MAT102", "name": "Matemática II", "blocks": 6, "prereq": ["GRAL_MAT101"] },
+        { "id": "GRAL_FIS102", "name": "Física II", "blocks": 4, "prereq": ["GRAL_FIS101", "GRAL_MAT101"] },
+        { "id": "CIV_EST202", "name": "Estática", "blocks": 6, "prereq": ["GRAL_FIS101"] },
+        { "id": "CIV_GEO202", "name": "Geometría Descriptiva", "blocks": 4, "prereq": ["CIV_DIB101"] }
+      ]
+    },
+    {
+      "number": 3,
+      "subjects": [
+        { "id": "GRAL_MAT103", "name": "Matemática III", "blocks": 6, "prereq": ["GRAL_MAT102"] },
+        { "id": "CIV_RES303", "name": "Resistencia de Materiales", "blocks": 6, "prereq": ["CIV_EST202"] },
+        { "id": "CIV_TOPO303", "name": "Topografía I", "blocks": 5, "prereq": ["CIV_GEO202"] },
+        { "id": "GRAL_EST103", "name": "Probabilidades y Estadística", "blocks": 4, "prereq": ["GRAL_MAT102"] }
+      ]
+    }
+  ]
+}

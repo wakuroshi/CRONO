@@ -1,0 +1,135 @@
+{
+  "career": "Ingeniería Civil",
+  "period": "2026-1CR",
+  "semester": 2,
+  "results": [
+    {
+      "id": "GRAL_MAT102",
+      "nombre": "Matemática II",
+      "profesor": "PROF_CIENCIAS_A",
+      "horario": [
+        {
+          "index": 1,
+          "dia": "Lunes",
+          "bloque_id": 1
+        },
+        {
+          "index": 2,
+          "dia": "Lunes",
+          "bloque_id": 2
+        },
+        {
+          "index": 3,
+          "dia": "Lunes",
+          "bloque_id": 3
+        },
+        {
+          "index": 4,
+          "dia": "Lunes",
+          "bloque_id": 4
+        },
+        {
+          "index": 5,
+          "dia": "Lunes",
+          "bloque_id": 5
+        },
+        {
+          "index": 21,
+          "dia": "Miércoles",
+          "bloque_id": 1
+        }
+      ]
+    },
+    {
+      "id": "GRAL_FIS102",
+      "nombre": "Física II",
+      "profesor": "PROF_FISICA_X",
+      "horario": [
+        {
+          "index": 13,
+          "dia": "Martes",
+          "bloque_id": 3
+        },
+        {
+          "index": 14,
+          "dia": "Martes",
+          "bloque_id": 4
+        },
+        {
+          "index": 30,
+          "dia": "Jueves",
+          "bloque_id": 0
+        },
+        {
+          "index": 34,
+          "dia": "Jueves",
+          "bloque_id": 4
+        }
+      ]
+    },
+    {
+      "id": "CIV_EST202",
+      "nombre": "Estática",
+      "profesor": "PROF_CIVIL_ESTRUCT",
+      "horario": [
+        {
+          "index": 27,
+          "dia": "Miércoles",
+          "bloque_id": 7
+        },
+        {
+          "index": 28,
+          "dia": "Miércoles",
+          "bloque_id": 8
+        },
+        {
+          "index": 29,
+          "dia": "Miércoles",
+          "bloque_id": 9
+        },
+        {
+          "index": 35,
+          "dia": "Jueves",
+          "bloque_id": 5
+        },
+        {
+          "index": 36,
+          "dia": "Jueves",
+          "bloque_id": 6
+        },
+        {
+          "index": 37,
+          "dia": "Jueves",
+          "bloque_id": 7
+        }
+      ]
+    },
+    {
+      "id": "CIV_GEO202",
+      "nombre": "Geometría Descriptiva",
+      "profesor": "PROF_CIVIL_DISEÑO",
+      "horario": [
+        {
+          "index": 0,
+          "dia": "Lunes",
+          "bloque_id": 0
+        },
+        {
+          "index": 10,
+          "dia": "Martes",
+          "bloque_id": 0
+        },
+        {
+          "index": 11,
+          "dia": "Martes",
+          "bloque_id": 1
+        },
+        {
+          "index": 12,
+          "dia": "Martes",
+          "bloque_id": 2
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ CRONO es un motor de optimización de horarios académicos basado en restriccion
 
 ## 🚀 Características Principales
 
-Resolución Global: CRONO evalúa toda la carrera simultáneamente para evitar choques en materias transversales.
+Resolución Global: CRONO evalúa todas las carreras simultáneamente para evitar choques entre materias, permitiendo materias compartidas entre carreras.
 
 Basado en Restricciones (CP-SAT): Utiliza lógica matemática avanzada para garantizar que el horario entregado sea 100% factible.
 
@@ -49,31 +49,29 @@ Capa de Optimización: Evalúa billones de combinaciones posibles para encontrar
 
 Hard Constraints: Ningún profesor puede estar en dos lugares a la vez; ninguna materia de un mismo semestre puede solaparse.
 
-Soft Constraints: Minimizar bloques aislados (ej. una clase de 45 min rodeada de horas libres).
+Soft Constraints: Minimizar bloques aislados (ej. una clase de 45 min rodeada de horas libres); minimizar uso de días para intentar dejarle al menos un día libre al estudiante.
 
 ## 🖥️ Uso
 
-Para generar los horarios de una carrera y periodo específico, ejecuta:
+Para generar los horarios de un período:
 
 ```bash
-python main.py --career ING_COMPUTACION.json --period 2026-1CR --time-limit 60
+python main.py --period 2026-1CR
 ```
 
 ### Parámetros:
 
---career: El archivo de configuración de la carrera.
+--help (-h): Muestra ayuda.
 
 --period: La carpeta del periodo académico actual.
 
---time-limit: Tiempo máximo (en segundos) que el solver tiene para buscar la solución óptima, no debería de ser muy alto aunque en algunas versiones experimentales fue util para debugging.
+--mallas_dir: La carpeta de las mallas curriculares (default: ./data/mallas/)
 
 ## 📄 Formato de Salida
 
 El sistema generará archivos JSON individuales por cada semestre en la carpeta outputs/. Cada archivo contiene el detalle de las materias, el profesor asignado y los bloques específicos (día y hora).
 
 ## 🪡 TO-DO
-
-- Cruzado de multiples carreras, generar varias carreras al mismo tiempo a partir de los datos conocidos o si ya se predifinio el horario de una carrera la nueva generada no choque con esta
 
 - GUI
 

@@ -1,8 +1,8 @@
-# Crono app
+# ⏱️ CRONO: Constraint-based Rostering Organizer for Nodal Optimization
 
-## Run the app
+CRONO es un motor de optimización de horarios académicos basado en restricciones (Constraint Programming). Utiliza el solver de Google OR-Tools para resolver el problema de asignación de bloques horarios, asegurando que no existan conflictos entre profesores, semestres o requisitos de infraestructura, mientras busca maximizar la comodidad del horario mediante penalizaciones inteligentes.
 
-### uv
+## 🚀 Características Principales
 
 Resolución Global: CRONO evalúa todas las carreras simultáneamente para evitar choques entre materias, permitiendo materias compartidas entre carreras.
 
@@ -20,7 +20,7 @@ Google OR-Tools
 Para instalar las dependencias:
 
 ```bash
-uv run flet run
+pip install ortools
 ```
 
 ## 📂 Estructura del Proyecto
@@ -59,50 +59,21 @@ Para generar los horarios de un período:
 python main.py --period 2026-1CR
 ```
 
-For more details on running the app, refer to the [Getting Started Guide](https://flet.dev/docs/).
+### Parámetros:
 
 --help (-h): Muestra ayuda.
 
-### Android
+--period: La carpeta del periodo académico actual.
 
 --mallas_dir: La carpeta de las mallas curriculares (default: ./data/mallas/)
 
-For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://flet.dev/docs/publish/android/).
+## 📄 Formato de Salida
 
-### iOS
+El sistema generará archivos JSON individuales por cada semestre en la carpeta outputs/. Cada archivo contiene el detalle de las materias, el profesor asignado y los bloques específicos (día y hora).
 
-```bash
-flet build ipa -v
-```
+## 🪡 TO-DO
 
 - GUI
 
-```bash
-flet build macos -v
-```
+- Expandir versatilidad (generacion manual asistida en vez de solo automatica, parametrización del algoritmo y constraints)
 
-For more details on building macOS package, refer to the [macOS Packaging Guide](https://flet.dev/docs/publish/macos/).
-
-### Linux
-
-```bash
-flet build linux -v
-```
-
-For more details on building Linux package, refer to the [Linux Packaging Guide](https://flet.dev/docs/publish/linux/).
-
-### Windows
-
-```bash
-flet build windows -v
-```
-
-For more details on building Windows package, refer to the [Windows Packaging Guide](https://flet.dev/docs/publish/windows/).
-
-### Web
-
-```bash
-flet build web -v
-```
-
-For more details on building Web app, refer to the [Web Packaging Guide](https://flet.dev/docs/publish/web/).

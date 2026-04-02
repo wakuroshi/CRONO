@@ -1,69 +1,81 @@
-# Crono app
+# ⏱️ CRONO: Constraint-based Rostering Organizer for Nodal Optimization
 
-## Run the app
+CRONO es un motor de optimización de horarios académicos basado en restricciones (Constraint Programming). Utiliza el solver de Google OR-Tools para resolver el problema de asignación de bloques horarios, asegurando que no existan conflictos entre profesores, semestres o requisitos de infraestructura, mientras busca maximizar la comodidad del horario mediante penalizaciones inteligentes.
 
-### uv
+## 🚀 Características Principales
 
-Run as a desktop app:
+Resolución Global: CRONO evalúa toda la carrera simultáneamente para evitar choques en materias transversales.
 
-```bash
-uv run flet run
-```
+Basado en Restricciones (CP-SAT): Utiliza lógica matemática avanzada para garantizar que el horario entregado sea 100% factible.
 
-Run as a web app:
+Optimización de "Huecos": Implementa una función objetivo que penaliza las horas libres entre clases y los patrones de horarios fragmentados (ventanas).
 
-```bash
-uv run flet run --web
-```
+Modularidad JSON: Entrada y salida de datos totalmente en formato JSON para facilitar la integración con algun frontend.
 
-For more details on running the app, refer to the [Getting Started Guide](https://flet.dev/docs/).
+## 🛠️ Requisitos Técnicos
 
-## Build the app
+Python 3.8 o superior
+Google OR-Tools
 
-### Android
+Para instalar las dependencias:
 
 ```bash
-flet build apk -v
+pip install ortools
 ```
 
-For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://flet.dev/docs/publish/android/).
+## 📂 Estructura del Proyecto
 
-### iOS
+```CRONO/
+├── data/
+│   ├── ING_COMPUTACION.json       # Definición de la malla curricular
+│   └── periodos/
+│       └── 2026-1CR/
+│           ├── assignments.json    # Relación Materia-Profesor
+│           └── availability.json   # Disponibilidad horaria de cada Prof.
+├── outputs/                        # Horarios generados por semestre
+├── main.py                         # Punto de entrada del script
+└── solver.py                       # El "cerebro" (Lógica de OR-Tools)
+```
+
+## ⚙️ Cómo Funciona
+
+CRONO procesa tres capas de datos para construir el modelo matemático:
+
+Capa de Materias: Extrae la cantidad de bloques semanales necesarios por asignatura.
+
+Capa de Profesores: Cruza la disponibilidad del docente con las materias asignadas.
+
+Capa de Optimización: Evalúa billones de combinaciones posibles para encontrar una que cumpla con:
+
+Hard Constraints: Ningún profesor puede estar en dos lugares a la vez; ninguna materia de un mismo semestre puede solaparse.
+
+Soft Constraints: Minimizar bloques aislados (ej. una clase de 45 min rodeada de horas libres).
+
+## 🖥️ Uso
+
+Para generar los horarios de una carrera y periodo específico, ejecuta:
 
 ```bash
-flet build ipa -v
+python main.py --career ING_COMPUTACION.json --period 2026-1CR --time-limit 60
 ```
 
-For more details on building and signing `.ipa`, refer to the [iOS Packaging Guide](https://flet.dev/docs/publish/ios/).
+### Parámetros:
 
-### macOS
+--career: El archivo de configuración de la carrera.
 
-```bash
-flet build macos -v
-```
+--period: La carpeta del periodo académico actual.
 
-For more details on building macOS package, refer to the [macOS Packaging Guide](https://flet.dev/docs/publish/macos/).
+--time-limit: Tiempo máximo (en segundos) que el solver tiene para buscar la solución óptima, no debería de ser muy alto aunque en algunas versiones experimentales fue util para debugging.
 
-### Linux
+## 📄 Formato de Salida
 
-```bash
-flet build linux -v
-```
+El sistema generará archivos JSON individuales por cada semestre en la carpeta outputs/. Cada archivo contiene el detalle de las materias, el profesor asignado y los bloques específicos (día y hora).
 
-For more details on building Linux package, refer to the [Linux Packaging Guide](https://flet.dev/docs/publish/linux/).
+## 🪡 TO-DO
 
-### Windows
+- Cruzado de multiples carreras, generar varias carreras al mismo tiempo a partir de los datos conocidos o si ya se predifinio el horario de una carrera la nueva generada no choque con esta
 
-```bash
-flet build windows -v
-```
+- GUI
 
-For more details on building Windows package, refer to the [Windows Packaging Guide](https://flet.dev/docs/publish/windows/).
+- Expandir versatilidad (generacion manual asistida en vez de solo automatica, parametrización del algoritmo y constraints)
 
-### Web
-
-```bash
-flet build web -v
-```
-
-For more details on building Web app, refer to the [Web Packaging Guide](https://flet.dev/docs/publish/web/).

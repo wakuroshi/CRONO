@@ -1,0 +1,107 @@
+{
+  "career": "Ingeniería de Computación",
+  "semesters": [
+    {
+      "number": 1,
+      "subjects": [
+        {
+          "id": "GRAL_MAT101",
+          "name": "Matemática I",
+          "blocks": 6,
+          "prereq": []
+        },
+        {
+          "id": "GRAL_FIS101",
+          "name": "Física I",
+          "blocks": 4,
+          "prereq": []
+        },
+        {
+          "id": "COMP_PROG101",
+          "name": "Algoritmos y Programación I",
+          "blocks": 6,
+          "prereq": []
+        },
+        {
+          "id": "GRAL_LIN101",
+          "name": "Inglés Técnico I",
+          "blocks": 2,
+          "prereq": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "subjects": [
+        {
+          "id": "GRAL_MAT102",
+          "name": "Matemática II",
+          "blocks": 6,
+          "prereq": [
+            "GRAL_MAT101"
+          ]
+        },
+        {
+          "id": "GRAL_FIS102",
+          "name": "Física II",
+          "blocks": 4,
+          "prereq": [
+            "GRAL_FIS101",
+            "GRAL_MAT101"
+          ]
+        },
+        {
+          "id": "COMP_PROG102",
+          "name": "Algoritmos y Programación II",
+          "blocks": 6,
+          "prereq": [
+            "COMP_PROG101"
+          ]
+        },
+        {
+          "id": "COMP_LOG102",
+          "name": "Lógica Computacional",
+          "blocks": 4,
+          "prereq": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "subjects": [
+        {
+          "id": "GRAL_MAT103",
+          "name": "Matemática III",
+          "blocks": 6,
+          "prereq": [
+            "GRAL_MAT102"
+          ]
+        },
+        {
+          "id": "COMP_EDD103",
+          "name": "Estructuras de Datos",
+          "blocks": 6,
+          "prereq": [
+            "COMP_PROG102"
+          ]
+        },
+        {
+          "id": "COMP_ORG103",
+          "name": "Organización del Computador",
+          "blocks": 4,
+          "prereq": [
+            "COMP_LOG102"
+          ]
+        },
+        {
+          "id": "GRAL_EST103",
+          "name": "Probabilidades y Estadística",
+          "blocks": 4,
+          "prereq": [
+            "GRAL_MAT102"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,89 +1,67 @@
-import argparse
 import json
-import sys
+import argparse
 from pathlib import Path
-from solver import solve_global_career
+from solver import solve_university_model, TimeConfig
 
 
 def cargar_json(path):
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        print(f"Error: No se encontró el archivo en {path}")
-        sys.exit(1)
-    except json.JSONDecodeError:
-        print(f"Error: El archivo {path} no tiene un formato JSON válido.")
-        sys.exit(1)
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generador de Horarios Globales")
-    parser.add_argument(
-        "--career",
-        required=True,
-        help="Nombre del archivo de carrera en data/ (ej: ING_COMPUTACION.json)",
-    )
-    parser.add_argument(
-        "--period",
-        required=True,
-        help="ID del periodo en data/periodos/ (ej: 2026-1CR)",
-    )
-    parser.add_argument(
-        "--time-limit",
-        type=int,
-        default=60,
-        help="Tiempo máximo para el solver (segundos)",
-    )
-
+    # Argumentos del parser
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mallas_dir", default="data/mallas")
+    parser.add_argument("--periodo", required=True)
     args = parser.parse_args()
 
-    # Definicion de rutas
-    base_path = Path(__file__).parent
-    career_path = base_path / "data" / args.career
-    period_dir = base_path / "data" / "periodos" / args.period
-    assignments_path = period_dir / "assignments.json"
-    availability_path = period_dir / "availability.json"
-    output_dir = base_path / "outputs"
-    output_dir.mkdir(exist_ok=True)
-
-    # Carga de archivos
-    print(f"Cargando datos para {args.career}...")
-    career_data = cargar_json(career_path)
-    assignments = cargar_json(assignments_path)
-    availability = cargar_json(availability_path)
-
-    print(f"Iniciando resolucion global para el periodo {args.period}...")
-
-    # Call al solver para que interprete la data
-    resultados_globales = solve_global_career(
-        career_data, availability, assignments, time_limit=args.time_limit
+    # CONFIG DIAS Y BLOQUES POR DIA
+    config = TimeConfig(
+        dias=["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"], slots_por_dia=10
     )
 
-    if not resultados_globales:
-        print("No se pudo encontrar una solución óptima o factible.")
-        return
+    # Estructura de directorios
+    base_path = Path(__file__).parent
+    period_path = base_path / "data" / "periodos" / args.periodo
 
-    # Guardar resultados por semestre
-    for sem_num, materias in resultados_globales.items():
-        output_file = (
-            output_dir
-            / f"{Path(args.career).stem}_{args.period}_semestre_{sem_num}.json"
-        )
+    availability = cargar_json(period_path / "availability.json")
+    assignments = cargar_json(period_path / "assignments.json")
 
-        data_final = {
-            "carrera": career_data["career"],
-            "periodo": args.period,
-            "semestre": sem_num,
-            "materias": materias,
-        }
+    # Cargar todas las mallas de la carpeta
+    careers_payload = {}
+    mallas_path = base_path / args.mallas_dir
+    for file_path in mallas_path.glob("*.json"):
+        data = cargar_json(file_path)
+        careers_payload[data["career"]] = data
 
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(data_final, f, indent=2, ensure_ascii=False)
+    print(f"Resolviendo modelo para {len(careers_payload)} carreras...")
+    resultados = solve_university_model(
+        careers_payload, availability, assignments, config
+    )
 
-        print(f"Archivo generado: {output_file.name}")
+    if resultados:
+        output_base = base_path / "outputs"
+        for career_name, semestres in resultados.items():
+            career_tag = career_name.replace(" ", "_").upper()
+            career_dir = output_base / career_tag
+            career_dir.mkdir(parents=True, exist_ok=True)
 
-    print("\nProceso completado exitosamente.")
+            for sem_num, materias in semestres.items():
+                filename = f"{career_tag}_{args.periodo}_SEM_{sem_num}.json"
+                with open(career_dir / filename, "w", encoding="utf-8") as f:
+                    json.dump(
+                        {
+                            "career": career_name,
+                            "period": args.periodo,
+                            "semester": sem_num,
+                            "results": materias,
+                        },
+                        f,
+                        indent=2,
+                        ensure_ascii=False,
+                    )
+        print("Archivos generados correctamente.")
 
 
 if __name__ == "__main__":

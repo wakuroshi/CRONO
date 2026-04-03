@@ -6,4 +6,4 @@ hour = "7:00 AM"
 object_hour = datetime.strptime(hour, "%I:%M %p")
 class_time = 45
 columns = []
-filas_datos = []
+rows = []

@@ -1,40 +1,30 @@
+from datetime import timedelta
 import flet as ft
+import constantes as cs
 
 
 def main(page: ft.Page):
-    counter = ft.Text("0", size=50, data=0)
 
-    def increment_click(e):
-        counter.data += 1
-        counter.value = str(counter.data)
+    for i in cs.horario:
+        cs.columns.append(ft.DataColumn(label=i))
 
-    page.floating_action_button = ft.FloatingActionButton(
-        icon=ft.Icons.ADD, on_click=increment_click
-    )
+    for f in range(13):
+        row_cells = []
+        for c in range(7):
+            if c == 0:
+                new_hour = cs.object_hour + timedelta(minutes=cs.class_time)
+                result = new_hour.strftime("%I:%M %p")
+                row_cells.append(ft.DataCell(ft.Text(f"{cs.hour} - {result}")))
+                cs.object_hour = new_hour
+                cs.hour = result
+            else:
+                value = ((c - 1) * 13) + f
+                row_cells.append(ft.DataCell(ft.Text(str(value))))
+        cs.rows.append(ft.DataRow(cells=row_cells))
 
-    semesterbar = ft.MenuBar(
-        controls=[
-            ft.SubmenuButton(
-                content=ft.Text("Submenu"),
-                controls=[
-                    ft.MenuItemButton(content=ft.Text("Item 1")),
-                    ft.MenuItemButton(content=ft.Text("Item 2")),
-                    ft.MenuItemButton(content=ft.Text("Item 3")),
-                ],
-            ),
-        ],
-    )
+    horario = ft.DataTable(columns=cs.columns, rows=cs.rows)
 
-    page.add(
-        semesterbar,
-        ft.SafeArea(
-            expand=True,
-            content=ft.Container(
-                content=counter,
-                alignment=ft.Alignment.CENTER,
-            ),
-        ),
-    )
+    page.add(ft.Container(horario, alignment=ft.Alignment.CENTER))
 
 
 ft.run(main)

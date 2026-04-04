@@ -4,14 +4,94 @@
   "semester": 1,
   "results": [
     {
-      "id": "GRAL_MAT101",
-      "nombre": "Matemática I",
-      "profesor": "PROF_CIENCIAS_A",
+      "id": "EFS01202",
+      "nombre": "Educación Física Y Salud",
+      "profesor": "PROF_DEPORTES",
+      "recurso": null,
       "horario": [
         {
-          "index": 6,
-          "dia": "Lunes",
+          "index": 10,
+          "dia": "Martes",
+          "bloque_id": 0
+        },
+        {
+          "index": 44,
+          "dia": "Viernes",
+          "bloque_id": 4
+        }
+      ]
+    },
+    {
+      "id": "GAN01404",
+      "nombre": "Geometría Analítica",
+      "profesor": "PROF_CIENCIAS_A",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 15,
+          "dia": "Martes",
+          "bloque_id": 5
+        },
+        {
+          "index": 16,
+          "dia": "Martes",
           "bloque_id": 6
+        },
+        {
+          "index": 17,
+          "dia": "Martes",
+          "bloque_id": 7
+        },
+        {
+          "index": 48,
+          "dia": "Viernes",
+          "bloque_id": 8
+        }
+      ]
+    },
+    {
+      "id": "LOG01404",
+      "nombre": "Lógica",
+      "profesor": "PROF_COMP_LOGICA",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 2,
+          "dia": "Lunes",
+          "bloque_id": 2
+        },
+        {
+          "index": 3,
+          "dia": "Lunes",
+          "bloque_id": 3
+        },
+        {
+          "index": 40,
+          "dia": "Viernes",
+          "bloque_id": 0
+        },
+        {
+          "index": 43,
+          "dia": "Viernes",
+          "bloque_id": 3
+        }
+      ]
+    },
+    {
+      "id": "MAI01506",
+      "nombre": "Matemática I",
+      "profesor": "PROF_CIENCIAS_B",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 0,
+          "dia": "Lunes",
+          "bloque_id": 0
+        },
+        {
+          "index": 1,
+          "dia": "Lunes",
+          "bloque_id": 1
         },
         {
           "index": 7,
@@ -19,37 +99,28 @@
           "bloque_id": 7
         },
         {
-          "index": 8,
-          "dia": "Lunes",
-          "bloque_id": 8
-        },
-        {
-          "index": 9,
-          "dia": "Lunes",
-          "bloque_id": 9
-        },
-        {
-          "index": 20,
-          "dia": "Miércoles",
-          "bloque_id": 0
-        },
-        {
-          "index": 23,
-          "dia": "Miércoles",
+          "index": 33,
+          "dia": "Jueves",
           "bloque_id": 3
+        },
+        {
+          "index": 34,
+          "dia": "Jueves",
+          "bloque_id": 4
+        },
+        {
+          "index": 35,
+          "dia": "Jueves",
+          "bloque_id": 5
         }
       ]
     },
     {
-      "id": "GRAL_FIS101",
-      "nombre": "Física I",
-      "profesor": "PROF_FISICA_X",
+      "id": "VEC01202",
+      "nombre": "Venezuela Contemporánea",
+      "profesor": "PROF_HUMANIDADES",
+      "recurso": null,
       "horario": [
-        {
-          "index": 10,
-          "dia": "Martes",
-          "bloque_id": 0
-        },
         {
           "index": 11,
           "dia": "Martes",
@@ -59,65 +130,6 @@
           "index": 12,
           "dia": "Martes",
           "bloque_id": 2
-        },
-        {
-          "index": 22,
-          "dia": "Miércoles",
-          "bloque_id": 2
-        }
-      ]
-    },
-    {
-      "id": "COMP_PROG101",
-      "nombre": "Algoritmos y Programación I",
-      "profesor": "PROF_COMP_ALGO",
-      "horario": [
-        {
-          "index": 26,
-          "dia": "Miércoles",
-          "bloque_id": 6
-        },
-        {
-          "index": 27,
-          "dia": "Miércoles",
-          "bloque_id": 7
-        },
-        {
-          "index": 28,
-          "dia": "Miércoles",
-          "bloque_id": 8
-        },
-        {
-          "index": 29,
-          "dia": "Miércoles",
-          "bloque_id": 9
-        },
-        {
-          "index": 38,
-          "dia": "Jueves",
-          "bloque_id": 8
-        },
-        {
-          "index": 39,
-          "dia": "Jueves",
-          "bloque_id": 9
-        }
-      ]
-    },
-    {
-      "id": "GRAL_LIN101",
-      "nombre": "Inglés Técnico I",
-      "profesor": "PROF_IDIOMAS",
-      "horario": [
-        {
-          "index": 0,
-          "dia": "Lunes",
-          "bloque_id": 0
-        },
-        {
-          "index": 21,
-          "dia": "Miércoles",
-          "bloque_id": 1
         }
       ]
     }

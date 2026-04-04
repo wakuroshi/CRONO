@@ -20,6 +20,7 @@ def main():
         slots_por_dia=10
     )
 
+
     # Estructura de directorios
     base_path = Path(__file__).parent
     period_path = base_path / "data" / "periodos" / args.periodo

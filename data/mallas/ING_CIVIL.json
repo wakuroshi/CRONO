@@ -4,28 +4,33 @@
     {
       "number": 1,
       "subjects": [
-        { "id": "GRAL_MAT101", "name": "Matemática I", "blocks": 6, "prereq": [] },
-        { "id": "GRAL_FIS101", "name": "Física I", "blocks": 4, "prereq": [] },
-        { "id": "CIV_DIB101", "name": "Dibujo de Ingeniería", "blocks": 4, "prereq": [] },
-        { "id": "GRAL_LIN101", "name": "Inglés Técnico I", "blocks": 2, "prereq": [] }
+        { "id": "EFS01202", "name": "Educación Física Y Salud", "blocks": 2, "prereq": [] },
+        { "id": "GAN01404", "name": "Geometría Analítica", "blocks": 4, "prereq": [] },
+        { "id": "LOG01404", "name": "Lógica", "blocks": 4, "prereq": [] },
+        { "id": "MAI01506", "name": "Matemática I", "blocks": 6, "prereq": [] },
+        { "id": "VEC01202", "name": "Venezuela Contemporánea", "blocks": 2, "prereq": [] }
       ]
     },
     {
       "number": 2,
       "subjects": [
-        { "id": "GRAL_MAT102", "name": "Matemática II", "blocks": 6, "prereq": ["GRAL_MAT101"] },
-        { "id": "GRAL_FIS102", "name": "Física II", "blocks": 4, "prereq": ["GRAL_FIS101", "GRAL_MAT101"] },
-        { "id": "CIV_EST202", "name": "Estática", "blocks": 6, "prereq": ["GRAL_FIS101"] },
-        { "id": "CIV_GEO202", "name": "Geometría Descriptiva", "blocks": 4, "prereq": ["CIV_DIB101"] }
+        { "id": "ALI02304", "name": "Álgebra Lineal", "blocks": 4, "prereq": ["GAN01404"] },
+        { "id": "CIN02303", "name": "Creatividad E Inventiva", "blocks": 3, "prereq": ["LOG01404"] },
+        { "id": "FIS02405", "name": "Física I", "blocks": 5, "prereq": ["GAN01404", "MAI01506"] },
+        { "id": "GDS02203", "name": "Geometría Descriptiva", "blocks": 3, "prereq": ["GAN01404"] },
+        { "id": "MAI02506", "name": "Matemática II", "blocks": 6, "prereq": ["MAI01506"] },
+        { "id": "PRO02305", "name": "Programación I", "blocks": 5, "prereq": [] }
       ]
     },
     {
       "number": 3,
       "subjects": [
-        { "id": "GRAL_MAT103", "name": "Matemática III", "blocks": 6, "prereq": ["GRAL_MAT102"] },
-        { "id": "CIV_RES303", "name": "Resistencia de Materiales", "blocks": 6, "prereq": ["CIV_EST202"] },
-        { "id": "CIV_TOPO303", "name": "Topografía I", "blocks": 5, "prereq": ["CIV_GEO202"] },
-        { "id": "GRAL_EST103", "name": "Probabilidades y Estadística", "blocks": 4, "prereq": ["GRAL_MAT102"] }
+        { "id": "DIB03204", "name": "Dibujo", "blocks": 4, "prereq": ["GDS02203"], "recurso": "lab_computacion" },
+        { "id": "EDI03304", "name": "Ecuaciones Diferenciales", "blocks": 4, "prereq": ["MAI02506", "ALI02304"] },
+        { "id": "FIS03405", "name": "Física II", "blocks": 5, "prereq": ["FIS02405"] },
+        { "id": "IIN03202", "name": "Introducción a la Ingeniería", "blocks": 2, "prereq": [] },
+        { "id": "MAI03304", "name": "Matemática III", "blocks": 4, "prereq": ["MAI02506"] },
+        { "id": "PRO03305", "name": "Programación II", "blocks": 5, "prereq": ["PRO02305"] }
       ]
     }
   ]

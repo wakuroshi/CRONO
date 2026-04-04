@@ -4,20 +4,95 @@
   "semester": 2,
   "results": [
     {
-      "id": "GRAL_MAT102",
-      "nombre": "Matemática II",
+      "id": "ALI02304",
+      "nombre": "Álgebra Lineal",
       "profesor": "PROF_CIENCIAS_A",
+      "recurso": null,
       "horario": [
+        {
+          "index": 8,
+          "dia": "Lunes",
+          "bloque_id": 8
+        },
+        {
+          "index": 9,
+          "dia": "Lunes",
+          "bloque_id": 9
+        },
+        {
+          "index": 18,
+          "dia": "Martes",
+          "bloque_id": 8
+        },
+        {
+          "index": 19,
+          "dia": "Martes",
+          "bloque_id": 9
+        }
+      ]
+    },
+    {
+      "id": "CIN02303",
+      "nombre": "Creatividad E Inventiva",
+      "profesor": "PROF_HUMANIDADES",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 0,
+          "dia": "Lunes",
+          "bloque_id": 0
+        },
         {
           "index": 1,
           "dia": "Lunes",
           "bloque_id": 1
         },
         {
-          "index": 2,
-          "dia": "Lunes",
+          "index": 42,
+          "dia": "Viernes",
+          "bloque_id": 2
+        }
+      ]
+    },
+    {
+      "id": "FIS02405",
+      "nombre": "Física I",
+      "profesor": "PROF_FISICA_X",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 12,
+          "dia": "Martes",
           "bloque_id": 2
         },
+        {
+          "index": 13,
+          "dia": "Martes",
+          "bloque_id": 3
+        },
+        {
+          "index": 40,
+          "dia": "Viernes",
+          "bloque_id": 0
+        },
+        {
+          "index": 41,
+          "dia": "Viernes",
+          "bloque_id": 1
+        },
+        {
+          "index": 43,
+          "dia": "Viernes",
+          "bloque_id": 3
+        }
+      ]
+    },
+    {
+      "id": "MAI02506",
+      "nombre": "Matemática II",
+      "profesor": "PROF_CIENCIAS_B",
+      "recurso": null,
+      "horario": [
         {
           "index": 3,
           "dia": "Lunes",
@@ -34,85 +109,37 @@
           "bloque_id": 5
         },
         {
-          "index": 21,
-          "dia": "Miércoles",
-          "bloque_id": 1
-        }
-      ]
-    },
-    {
-      "id": "GRAL_FIS102",
-      "nombre": "Física II",
-      "profesor": "PROF_FISICA_X",
-      "horario": [
-        {
-          "index": 13,
+          "index": 10,
           "dia": "Martes",
-          "bloque_id": 3
+          "bloque_id": 0
+        },
+        {
+          "index": 11,
+          "dia": "Martes",
+          "bloque_id": 1
         },
         {
           "index": 14,
           "dia": "Martes",
           "bloque_id": 4
-        },
-        {
-          "index": 30,
-          "dia": "Jueves",
-          "bloque_id": 0
-        },
-        {
-          "index": 34,
-          "dia": "Jueves",
-          "bloque_id": 4
         }
       ]
     },
     {
-      "id": "COMP_PROG102",
-      "nombre": "Algoritmos y Programación II",
+      "id": "PRO02305",
+      "nombre": "Programación I",
       "profesor": "PROF_COMP_ALGO",
+      "recurso": null,
       "horario": [
         {
-          "index": 8,
+          "index": 2,
           "dia": "Lunes",
-          "bloque_id": 8
+          "bloque_id": 2
         },
         {
-          "index": 15,
-          "dia": "Martes",
-          "bloque_id": 5
-        },
-        {
-          "index": 16,
-          "dia": "Martes",
-          "bloque_id": 6
-        },
-        {
-          "index": 17,
-          "dia": "Martes",
-          "bloque_id": 7
-        },
-        {
-          "index": 18,
-          "dia": "Martes",
-          "bloque_id": 8
-        },
-        {
-          "index": 19,
-          "dia": "Martes",
-          "bloque_id": 9
-        }
-      ]
-    },
-    {
-      "id": "COMP_LOG102",
-      "nombre": "Lógica Computacional",
-      "profesor": "PROF_COMP_HARD",
-      "horario": [
-        {
-          "index": 20,
+          "index": 21,
           "dia": "Miércoles",
-          "bloque_id": 0
+          "bloque_id": 1
         },
         {
           "index": 22,

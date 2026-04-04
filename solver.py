@@ -13,7 +13,9 @@ def solve_university_model(careers_data: Dict, availability: Dict, assignments: 
     all_vars = {}
     penalties = []
 
-    print(f"--- Iniciando Modelo con Lógica de Compactación Corregida ---")
+    recursos_globales = {}
+
+    print(f"--- Iniciando Modelo con Lógica de Recursos Globales Versátiles ---")
 
     # REGISTRO DE VARIABLES Y RESTRICCIONES DURAS
     for career_name, data in careers_data.items():
@@ -25,12 +27,15 @@ def solve_university_model(careers_data: Dict, availability: Dict, assignments: 
                 sid = sub["id"]
                 n_blocks = sub["blocks"]
                 
+                # Identificador de recurso 
+                recurso_req = sub.get("recurso")
+                
                 if sid not in all_vars:
                     # PUNTERO UNICO (increible lol)
                     sub_vars = [model.NewBoolVar(f"v_{sid}_b{i}") for i in range(num_bloques)]
                     all_vars[sid] = sub_vars
                     
-                    # Restriccion: Cumplir con la carga horaria
+                    # Restricción: Carga horaria
                     model.Add(sum(sub_vars) == n_blocks).WithName(f"Carga_{sid}")
                     
                     # Restriccion: Disponibilidad del Profesor
@@ -40,12 +45,26 @@ def solve_university_model(careers_data: Dict, availability: Dict, assignments: 
                         for i in range(num_bloques):
                             if i not in valid_indices:
                                 model.Add(sub_vars[i] == 0).WithName(f"Disp_{prof}_{sid}_B{i}")
+                    
+                    # Registro de la materia en el recurso global correspondiente
+                    if recurso_req:
+                        if recurso_req not in recursos_globales:
+                            recursos_globales[recurso_req] = [[] for _ in range(num_bloques)]
+                        for i in range(num_bloques):
+                            recursos_globales[recurso_req][i].append(sub_vars[i])
                 
                 sem_vars.append(all_vars[sid])
             
             # Restriccion: No solapamiento por semestre (Alumnos)
             for i in range(num_bloques):
                 model.Add(sum(s_v[i] for s_v in sem_vars) <= 1).WithName(f"NoChoque_Sem{sem_num}_B{i}")
+
+    # EXCLUSION MUTUA POR RECURSO (Mutex por recurso)
+    for res_name, bloques_recurso in recursos_globales.items():
+        for i in range(num_bloques):
+            if bloques_recurso[i]:
+                # Solo una materia que requiera 'recurso' puede usar el bloque i
+                model.Add(sum(bloques_recurso[i]) <= 1).WithName(f"Mutex_{res_name}_B{i}")
 
     # RESTRICCION DE PROFESORES (No estar en dos lugares a la vez)
     prof_map = {}
@@ -58,15 +77,14 @@ def solve_university_model(careers_data: Dict, availability: Dict, assignments: 
         for i in range(num_bloques):
             model.Add(sum(m_v[i] for m_v in vars_list) <= 1).WithName(f"NoChoqueProf_{prof}_B{i}")
 
-    # LOGICA DE COMPACTACION Y PENALIZACIONES (SC por Materia, no pueden ser duras porque eso romperia en casos complicados)
+    # LOGICA DE COMPACTACION POR MATERIA Y PENALIZACIONES (SC por Materia, no pueden ser duras porque eso romperia en casos complicados)
     for sid, vars_list in all_vars.items():
         dias_activos = []
-        
         for d_idx in range(len(config.dias)):
             day_start = d_idx * config.slots_por_dia
             day_vars = vars_list[day_start : day_start + config.slots_por_dia]
             
-            # Intentar que quede todo pegado
+            # Intentar que todo quede pegado
             transiciones = []
             for i in range(len(day_vars) - 1):
                 t = model.NewBoolVar(f't_{sid}_d{d_idx}_b{i}')
@@ -77,18 +95,17 @@ def solve_university_model(careers_data: Dict, availability: Dict, assignments: 
             
             model.Add(sum(transiciones) <= 1).WithName(f"Contig_{sid}_D{d_idx}")
 
-            # Sencillo, simplemente evita usar varianza de dias (por eso dias_activos hace append a cada dia)
+             # Sencillo, simplemente evita usar varianza de dias (por eso dias_activos hace append a cada dia)
             esta_dia = model.NewBoolVar(f'act_{sid}_d{d_idx}')
             model.AddMaxEquality(esta_dia, day_vars)
             dias_activos.append(esta_dia)
 
-        # Evitar que una materia se reparta en mas de 2 días, es tedioso ver una materia en 3 dias separados
-        num_dias = model.NewIntVar(0, 5, f'ndias_{sid}')
+        # Evitar que una materia se reparta en mas de 2 dias, es tedioso ver una materia en 3 dias separados
+        num_dias = model.NewIntVar(0, 7, f'ndias_{sid}')
         model.Add(num_dias == sum(dias_activos))
-        
         es_muy_disperso = model.NewBoolVar(f'disperso_{sid}')
         model.Add(num_dias <= 2).OnlyEnforceIf(es_muy_disperso.Not())
-        penalties.append(es_muy_disperso * 150) # Penalizacion alta por disperion
+        penalties.append(es_muy_disperso * 150)
 
     # penalizar huecos
     for career_name, data in careers_data.items():
@@ -100,25 +117,22 @@ def solve_university_model(careers_data: Dict, availability: Dict, assignments: 
             for d_idx in range(len(config.dias)):
                 day_start = d_idx * config.slots_por_dia
                 dia_ocupado = model.NewBoolVar(f'dia_ocupado_{career_name}_S{sem["number"]}_d{d_idx}')
-                
                 vars_dia = []
                 for sub_vars in sem_subjects_vars:
                     vars_dia.extend(sub_vars[day_start : day_start + config.slots_por_dia])
-                
-                # Si hay alguna clase este dia para este semestre, dia_ocupado es 1
+               # Si hay alguna clase este dia para este semestre, dia_ocupado es 1 
                 if vars_dia:
                     model.AddMaxEquality(dia_ocupado, vars_dia)
                 else:
                     model.Add(dia_ocupado == 0)
                 dias_activos_alumno.append(dia_ocupado)
 
-            total_dias_alumno = model.NewIntVar(0, 5, f'tot_dias_{career_name}_S{sem["number"]}')
+            total_dias_alumno = model.NewIntVar(0, 7, f'tot_dias_{career_name}_S{sem["number"]}')
             model.Add(total_dias_alumno == sum(dias_activos_alumno))
-
             va_5_dias = model.NewBoolVar(f'5_dias_{career_name}_S{sem["number"]}')
             # Si el solver no paga la multa de penalizacion, lo forzamos a 4 dias o menos
             model.Add(total_dias_alumno <= 4).OnlyEnforceIf(va_5_dias.Not())
-            # Multa absurdamente grande para priorizar darle un dia libre al estudiante
+            # Multa absurdamente grande para priorizar un dia libre al estudiante
             penalties.append(va_5_dias * 1000)
 
             # huecos (dia)
@@ -143,10 +157,10 @@ def solve_university_model(careers_data: Dict, availability: Dict, assignments: 
 
     # Aqui ya es la logica del solver
     solver = cp_model.CpSolver()
-    solver.parameters.max_time_in_seconds = 60.0 # Se podria subir mas, no fue necesario en testeo
+    solver.parameters.max_time_in_seconds = 60.0
     status = solver.Solve(model)
    
-   # prints de resultados
+    # prints de resultados
     print(f"Estado del Solver: {solver.StatusName(status)}")
 
     if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
@@ -170,6 +184,7 @@ def solve_university_model(careers_data: Dict, availability: Dict, assignments: 
                         "id": sid, 
                         "nombre": sub["name"], 
                         "profesor": assignments.get(sid), 
+                        "recurso": sub.get("recurso"), # Incluido en el output
                         "horario": bloques_asig
                     })
                 results_map[career_name][sem_num] = materias_output

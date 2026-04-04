@@ -4,29 +4,20 @@
   "semester": 3,
   "results": [
     {
-      "id": "GRAL_MAT103",
-      "nombre": "Matemática III",
-      "profesor": "PROF_CIENCIAS_B",
+      "id": "DIB03204",
+      "nombre": "Dibujo",
+      "profesor": "PROF_CIVIL_DISEÑO",
+      "recurso": "lab_computacion",
       "horario": [
         {
-          "index": 15,
-          "dia": "Martes",
-          "bloque_id": 5
-        },
-        {
-          "index": 16,
-          "dia": "Martes",
+          "index": 36,
+          "dia": "Jueves",
           "bloque_id": 6
         },
         {
-          "index": 17,
-          "dia": "Martes",
+          "index": 37,
+          "dia": "Jueves",
           "bloque_id": 7
-        },
-        {
-          "index": 18,
-          "dia": "Martes",
-          "bloque_id": 8
         },
         {
           "index": 38,
@@ -41,9 +32,10 @@
       ]
     },
     {
-      "id": "CIV_RES303",
-      "nombre": "Resistencia de Materiales",
-      "profesor": "PROF_CIVIL_ESTRUCT",
+      "id": "EDI03304",
+      "nombre": "Ecuaciones Diferenciales",
+      "profesor": "PROF_CIENCIAS_A",
+      "recurso": null,
       "horario": [
         {
           "index": 5,
@@ -61,26 +53,17 @@
           "bloque_id": 7
         },
         {
-          "index": 8,
-          "dia": "Lunes",
-          "bloque_id": 8
-        },
-        {
-          "index": 25,
-          "dia": "Miércoles",
+          "index": 35,
+          "dia": "Jueves",
           "bloque_id": 5
-        },
-        {
-          "index": 26,
-          "dia": "Miércoles",
-          "bloque_id": 6
         }
       ]
     },
     {
-      "id": "CIV_TOPO303",
-      "nombre": "Topografía I",
-      "profesor": "PROF_CIVIL_CAMPO",
+      "id": "FIS03405",
+      "nombre": "Física II",
+      "profesor": "PROF_FISICA_X",
+      "recurso": null,
       "horario": [
         {
           "index": 10,
@@ -93,9 +76,55 @@
           "bloque_id": 1
         },
         {
+          "index": 14,
+          "dia": "Martes",
+          "bloque_id": 4
+        },
+        {
+          "index": 20,
+          "dia": "Miércoles",
+          "bloque_id": 0
+        },
+        {
+          "index": 23,
+          "dia": "Miércoles",
+          "bloque_id": 3
+        }
+      ]
+    },
+    {
+      "id": "IIN03202",
+      "nombre": "Introducción a la Ingeniería",
+      "profesor": "PROF_ING_GENERAL",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 2,
+          "dia": "Lunes",
+          "bloque_id": 2
+        },
+        {
           "index": 12,
           "dia": "Martes",
           "bloque_id": 2
+        }
+      ]
+    },
+    {
+      "id": "MAI03304",
+      "nombre": "Matemática III",
+      "profesor": "PROF_CIENCIAS_B",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 8,
+          "dia": "Lunes",
+          "bloque_id": 8
+        },
+        {
+          "index": 9,
+          "dia": "Lunes",
+          "bloque_id": 9
         },
         {
           "index": 30,
@@ -103,36 +132,42 @@
           "bloque_id": 0
         },
         {
-          "index": 34,
+          "index": 31,
           "dia": "Jueves",
-          "bloque_id": 4
+          "bloque_id": 1
         }
       ]
     },
     {
-      "id": "GRAL_EST103",
-      "nombre": "Probabilidades y Estadística",
-      "profesor": "PROF_CIENCIAS_B",
+      "id": "PRO03305",
+      "nombre": "Programación II",
+      "profesor": "PROF_COMP_ALGO",
+      "recurso": null,
       "horario": [
         {
-          "index": 19,
+          "index": 0,
+          "dia": "Lunes",
+          "bloque_id": 0
+        },
+        {
+          "index": 1,
+          "dia": "Lunes",
+          "bloque_id": 1
+        },
+        {
+          "index": 3,
+          "dia": "Lunes",
+          "bloque_id": 3
+        },
+        {
+          "index": 4,
+          "dia": "Lunes",
+          "bloque_id": 4
+        },
+        {
+          "index": 13,
           "dia": "Martes",
-          "bloque_id": 9
-        },
-        {
-          "index": 27,
-          "dia": "Miércoles",
-          "bloque_id": 7
-        },
-        {
-          "index": 28,
-          "dia": "Miércoles",
-          "bloque_id": 8
-        },
-        {
-          "index": 29,
-          "dia": "Miércoles",
-          "bloque_id": 9
+          "bloque_id": 3
         }
       ]
     }

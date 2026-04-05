@@ -24,13 +24,17 @@ class _Semester(ft.Container):
         self.border = ft.border.all(1, "blue")
 
         self.layout = ft.Column(spacing=15)
-        self.layout.controls.append(
-            ft.Text(f"SEMESTRE {self.number}", size=16, weight=ft.FontWeight.BOLD)
-        )
-
+        expasion_children = []
         for code, value in self.assignments.items():
-            self.layout.controls.append(self._build_assigment(code, value))
-
+            expasion_children.append(self._build_assigment(code, value))
+        self.layout.controls.append(
+            ft.ExpansionTile(
+                title=ft.Text(
+                    f"SEMESTRE {self.number}", size=16, weight=ft.FontWeight.BOLD
+                ),
+                controls=expasion_children,
+            )
+        )
         self.content = self.layout
 
     def _build_assigment(self, code, name):

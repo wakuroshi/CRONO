@@ -7,6 +7,7 @@ object_hour = datetime.strptime(hour, "%I:%M %p")
 class_time = 45
 columns = []
 rows = []
+
 MATERIAS_DATA = {
     "EFS01202": "Educación Física",
     "GAN01404": "Geometría Analítica",

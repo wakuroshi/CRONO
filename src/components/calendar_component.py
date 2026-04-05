@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from typing import Callable, Optional
 
 
+# CalendarContainer
 @ft.control
 class CalendarContainer(ft.Container):
     def __init__(self, on_accept: Optional[Callable[[set], None]] = None):
@@ -123,6 +124,7 @@ class CalendarContainer(ft.Container):
         )
 
         return ft.Column(
+            scroll=ft.ScrollMode.AUTO,
             controls=[
                 ft.Text("Disponibilidad Docente", size=20),
                 ft.Divider(),

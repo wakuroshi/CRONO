@@ -1,10 +1,10 @@
 import flet as ft
-from components.profesors_containers import professorsContainer
+from components.period_conteniner import PeriodContainer
 
 
 def main(page: ft.Page):
-    professors = professorsContainer()
-    page.add(professors)
+    page.title = "C.R.O.N.O"
+    page.add(PeriodContainer())
 
 
 ft.run(main)

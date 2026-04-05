@@ -42,7 +42,7 @@ class _Semester(ft.Container):
 
         def add_prof_to_mat(e):
             name_input = ft.TextField(
-                label="Nombre del _Profesors",
+                label="Nombre del Profesors",
                 autofocus=True,
                 on_submit=lambda _: confirm_add(None),
             )

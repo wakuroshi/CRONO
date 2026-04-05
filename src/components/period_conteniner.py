@@ -1,5 +1,7 @@
 import flet as ft
 from .profesors_containers import professorsContainer
+import os
+from .calendar_component import CalendarContainer
 
 
 class PeriodContainer(ft.Container):
@@ -41,10 +43,17 @@ class PeriodContainer(ft.Container):
         )
 
     def _add_period(self, e):
+
+        prefix_path = os.getcwd()
         name = (self.period_input.value or "").strip()
+        period_path = os.path.normpath(
+            os.path.join(prefix_path, "..", "CRONO", "data", "periodos", name)
+        )
         if not name:
             return
 
         self.periods_column.controls.append(self._build_period_title(name))
         self.period_input.value = ""
+        os.mkdir(period_path)
+        CalendarContainer()._rec_set(name)
         self.update()

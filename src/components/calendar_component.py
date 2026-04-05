@@ -2,6 +2,8 @@ import flet as ft
 import constantes as cs
 from datetime import datetime, timedelta
 from typing import Callable, Optional
+import os
+import json
 
 
 # CalendarContainer
@@ -42,9 +44,19 @@ class CalendarContainer(ft.Container):
         self._popup.open = False
         self._page.update()
 
+    def _rec_set(self, period_name: str):
+        origin_path = os.getcwd()
+        period_path = os.path.normpath(
+            os.path.join(origin_path, "..", "CRONO", "data", "periodos", period_name)
+        )
+        availabity_path = os.path.join(period_path, "availability.json")
+        with open(availabity_path, "w") as file:
+            json.dump(list(self.availabity), file)
+
     def _accept_dialog(self, _):
         if self._on_accept_callback:
             self._on_accept_callback(set(self.availabity))
+
         self.close_dialog()
 
     def _cancel_dialog(self, _):

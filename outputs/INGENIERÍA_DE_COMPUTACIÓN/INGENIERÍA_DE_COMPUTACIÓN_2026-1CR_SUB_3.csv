@@ -1,24 +1,24 @@
 Grupo_Raiz,Subgrupo,Tarea_ID,Tarea_Nombre,Dependencia,Recurso,Dia,Bloque_ID,Index_Absoluto
-Ingeniería de Computación,3,ING03303,Inglés I,PROF_IDIOMAS,No_Asignado,Martes,6,16
-Ingeniería de Computación,3,ING03303,Inglés I,PROF_IDIOMAS,No_Asignado,Viernes,6,46
+Ingeniería de Computación,3,ING03303,Inglés I,PROF_IDIOMAS,No_Asignado,Miércoles,6,26
+Ingeniería de Computación,3,ING03303,Inglés I,PROF_IDIOMAS,No_Asignado,Miércoles,7,27
 Ingeniería de Computación,3,ING03303,Inglés I,PROF_IDIOMAS,No_Asignado,Viernes,7,47
-Ingeniería de Computación,3,EDI03304,Ecuaciones Diferenciales,PROF_CIENCIAS_A,No_Asignado,Martes,7,17
-Ingeniería de Computación,3,EDI03304,Ecuaciones Diferenciales,PROF_CIENCIAS_A,No_Asignado,Martes,8,18
-Ingeniería de Computación,3,EDI03304,Ecuaciones Diferenciales,PROF_CIENCIAS_A,No_Asignado,Martes,9,19
-Ingeniería de Computación,3,EDI03304,Ecuaciones Diferenciales,PROF_CIENCIAS_A,No_Asignado,Jueves,9,39
+Ingeniería de Computación,3,EDI03304,Ecuaciones Diferenciales,PROF_CIENCIAS_A,No_Asignado,Lunes,5,5
+Ingeniería de Computación,3,EDI03304,Ecuaciones Diferenciales,PROF_CIENCIAS_A,No_Asignado,Lunes,6,6
+Ingeniería de Computación,3,EDI03304,Ecuaciones Diferenciales,PROF_CIENCIAS_A,No_Asignado,Lunes,7,7
+Ingeniería de Computación,3,EDI03304,Ecuaciones Diferenciales,PROF_CIENCIAS_A,No_Asignado,Jueves,5,35
 Ingeniería de Computación,3,FIS03405,Física II,PROF_FISICA_X,No_Asignado,Jueves,0,30
 Ingeniería de Computación,3,FIS03405,Física II,PROF_FISICA_X,No_Asignado,Jueves,2,32
 Ingeniería de Computación,3,FIS03405,Física II,PROF_FISICA_X,No_Asignado,Jueves,3,33
-Ingeniería de Computación,3,FIS03405,Física II,PROF_FISICA_X,No_Asignado,Viernes,0,40
-Ingeniería de Computación,3,FIS03405,Física II,PROF_FISICA_X,No_Asignado,Viernes,1,41
-Ingeniería de Computación,3,IIN03202,Introducción a la Ingeniería,PROF_ING_GENERAL,No_Asignado,Martes,1,11
+Ingeniería de Computación,3,FIS03405,Física II,PROF_FISICA_X,No_Asignado,Jueves,4,34
+Ingeniería de Computación,3,FIS03405,Física II,PROF_FISICA_X,No_Asignado,Viernes,4,44
+Ingeniería de Computación,3,IIN03202,Introducción a la Ingeniería,PROF_ING_GENERAL,No_Asignado,Miércoles,2,22
 Ingeniería de Computación,3,IIN03202,Introducción a la Ingeniería,PROF_ING_GENERAL,No_Asignado,Jueves,1,31
+Ingeniería de Computación,3,MAI03304,Matemática III,PROF_CIENCIAS_B,No_Asignado,Lunes,0,0
+Ingeniería de Computación,3,MAI03304,Matemática III,PROF_CIENCIAS_B,No_Asignado,Lunes,1,1
 Ingeniería de Computación,3,MAI03304,Matemática III,PROF_CIENCIAS_B,No_Asignado,Lunes,2,2
-Ingeniería de Computación,3,MAI03304,Matemática III,PROF_CIENCIAS_B,No_Asignado,Lunes,3,3
-Ingeniería de Computación,3,MAI03304,Matemática III,PROF_CIENCIAS_B,No_Asignado,Lunes,4,4
-Ingeniería de Computación,3,MAI03304,Matemática III,PROF_CIENCIAS_B,No_Asignado,Jueves,4,34
-Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Lunes,8,8
-Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Lunes,9,9
-Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Martes,0,10
-Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Martes,2,12
-Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Martes,3,13
+Ingeniería de Computación,3,MAI03304,Matemática III,PROF_CIENCIAS_B,No_Asignado,Lunes,8,8
+Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Lunes,3,3
+Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Lunes,4,4
+Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Miércoles,0,20
+Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Miércoles,1,21
+Ingeniería de Computación,3,PRO03305,Programación II,PROF_COMP_ALGO,lab_computacion,Miércoles,3,23

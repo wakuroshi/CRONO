@@ -1,19 +1,19 @@
 Grupo_Raiz,Subgrupo,Tarea_ID,Tarea_Nombre,Dependencia,Recurso,Dia,Bloque_ID,Index_Absoluto
-Ingeniería Civil,1,EFS01202,Educación Física Y Salud,PROF_DEPORTES,No_Asignado,Martes,3,13
-Ingeniería Civil,1,EFS01202,Educación Física Y Salud,PROF_DEPORTES,No_Asignado,Martes,4,14
-Ingeniería Civil,1,GAN01404,Geometría Analítica,PROF_CIENCIAS_A,No_Asignado,Martes,5,15
-Ingeniería Civil,1,GAN01404,Geometría Analítica,PROF_CIENCIAS_A,No_Asignado,Martes,6,16
-Ingeniería Civil,1,GAN01404,Geometría Analítica,PROF_CIENCIAS_A,No_Asignado,Miércoles,8,28
-Ingeniería Civil,1,GAN01404,Geometría Analítica,PROF_CIENCIAS_A,No_Asignado,Miércoles,9,29
-Ingeniería Civil,1,LOG01404,Lógica,PROF_COMP_LOGICA,No_Asignado,Miércoles,0,20
-Ingeniería Civil,1,LOG01404,Lógica,PROF_COMP_LOGICA,No_Asignado,Miércoles,3,23
+Ingeniería Civil,1,EFS01202,Educación Física Y Salud,PROF_DEPORTES,No_Asignado,Martes,1,11
+Ingeniería Civil,1,EFS01202,Educación Física Y Salud,PROF_DEPORTES,No_Asignado,Martes,2,12
+Ingeniería Civil,1,GAN01404,Geometría Analítica,PROF_CIENCIAS_A,No_Asignado,Miércoles,5,25
+Ingeniería Civil,1,GAN01404,Geometría Analítica,PROF_CIENCIAS_A,No_Asignado,Miércoles,6,26
+Ingeniería Civil,1,GAN01404,Geometría Analítica,PROF_CIENCIAS_A,No_Asignado,Viernes,5,45
+Ingeniería Civil,1,GAN01404,Geometría Analítica,PROF_CIENCIAS_A,No_Asignado,Viernes,6,46
+Ingeniería Civil,1,LOG01404,Lógica,PROF_COMP_LOGICA,No_Asignado,Miércoles,1,21
 Ingeniería Civil,1,LOG01404,Lógica,PROF_COMP_LOGICA,No_Asignado,Viernes,0,40
-Ingeniería Civil,1,LOG01404,Lógica,PROF_COMP_LOGICA,No_Asignado,Viernes,3,43
-Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Lunes,0,0
-Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Lunes,1,1
-Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Lunes,6,6
-Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Lunes,7,7
-Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Lunes,8,8
-Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Martes,1,11
-Ingeniería Civil,1,VEC01202,Venezuela Contemporánea,PROF_HUMANIDADES,No_Asignado,Martes,0,10
-Ingeniería Civil,1,VEC01202,Venezuela Contemporánea,PROF_HUMANIDADES,No_Asignado,Martes,2,12
+Ingeniería Civil,1,LOG01404,Lógica,PROF_COMP_LOGICA,No_Asignado,Viernes,1,41
+Ingeniería Civil,1,LOG01404,Lógica,PROF_COMP_LOGICA,No_Asignado,Viernes,2,42
+Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Martes,3,13
+Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Martes,4,14
+Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Jueves,1,31
+Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Jueves,2,32
+Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Jueves,3,33
+Ingeniería Civil,1,MAI01506,Matemática I,PROF_CIENCIAS_B,No_Asignado,Jueves,4,34
+Ingeniería Civil,1,VEC01202,Venezuela Contemporánea,PROF_HUMANIDADES,No_Asignado,Miércoles,0,20
+Ingeniería Civil,1,VEC01202,Venezuela Contemporánea,PROF_HUMANIDADES,No_Asignado,Miércoles,2,22

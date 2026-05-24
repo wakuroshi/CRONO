@@ -1,9 +1,9 @@
 {
   "terminologia": {
-    "nivel_grupo_1": "Area",
-    "nivel_grupo_2": "Equipo",
-    "unidad_tarea": "Tarea",
-    "unidad_recurso": "Operario"
+    "nivel_grupo_1": "Carrera",
+    "nivel_grupo_2": "Semestre",
+    "unidad_tarea": "Materia",
+    "unidad_agente": "Profesor"
   },
   "tiempo": {
     "dias": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"],

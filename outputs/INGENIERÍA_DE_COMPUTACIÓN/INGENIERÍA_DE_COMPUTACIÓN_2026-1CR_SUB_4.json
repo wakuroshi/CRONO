@@ -6,7 +6,7 @@
     {
       "id": "FEL04304",
       "nombre": "Fundamentos de Electrónica",
-      "dependencia": "PROF_FISICA_X",
+      "agente": "PROF_FISICA_X",
       "recurso": null,
       "horario": [
         {
@@ -25,23 +25,18 @@
           "bloque_id": 3
         },
         {
-          "index": 14,
-          "dia": "Martes",
-          "bloque_id": 4
+          "index": 20,
+          "dia": "Miércoles",
+          "bloque_id": 0
         }
       ]
     },
     {
       "id": "PRO04405",
       "nombre": "Programación III",
-      "dependencia": "PROF_COMP_AVANZADA",
+      "agente": "PROF_COMP_AVANZADA",
       "recurso": "lab_computacion",
       "horario": [
-        {
-          "index": 35,
-          "dia": "Jueves",
-          "bloque_id": 5
-        },
         {
           "index": 36,
           "dia": "Jueves",
@@ -55,6 +50,11 @@
         {
           "index": 38,
           "dia": "Jueves",
+          "bloque_id": 8
+        },
+        {
+          "index": 48,
+          "dia": "Viernes",
           "bloque_id": 8
         },
         {

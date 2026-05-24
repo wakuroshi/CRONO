@@ -1,27 +1,27 @@
 Grupo_Raiz,Subgrupo,Tarea_ID,Tarea_Nombre,Dependencia,Recurso,Dia,Bloque_ID,Index_Absoluto
-Ingeniería Civil,2,ALI02304,Álgebra Lineal,PROF_CIENCIAS_A,No_Asignado,Lunes,6,6
-Ingeniería Civil,2,ALI02304,Álgebra Lineal,PROF_CIENCIAS_A,No_Asignado,Miércoles,5,25
-Ingeniería Civil,2,ALI02304,Álgebra Lineal,PROF_CIENCIAS_A,No_Asignado,Miércoles,6,26
+Ingeniería Civil,2,ALI02304,Álgebra Lineal,PROF_CIENCIAS_A,No_Asignado,Martes,8,18
+Ingeniería Civil,2,ALI02304,Álgebra Lineal,PROF_CIENCIAS_A,No_Asignado,Martes,9,19
 Ingeniería Civil,2,ALI02304,Álgebra Lineal,PROF_CIENCIAS_A,No_Asignado,Miércoles,7,27
-Ingeniería Civil,2,CIN02303,Creatividad E Inventiva,PROF_HUMANIDADES,No_Asignado,Miércoles,2,22
-Ingeniería Civil,2,CIN02303,Creatividad E Inventiva,PROF_HUMANIDADES,No_Asignado,Viernes,1,41
-Ingeniería Civil,2,CIN02303,Creatividad E Inventiva,PROF_HUMANIDADES,No_Asignado,Viernes,2,42
-Ingeniería Civil,2,FIS02405,Física I,PROF_FISICA_X,No_Asignado,Miércoles,0,20
+Ingeniería Civil,2,ALI02304,Álgebra Lineal,PROF_CIENCIAS_A,No_Asignado,Miércoles,8,28
+Ingeniería Civil,2,CIN02303,Creatividad E Inventiva,PROF_HUMANIDADES,No_Asignado,Martes,1,11
+Ingeniería Civil,2,CIN02303,Creatividad E Inventiva,PROF_HUMANIDADES,No_Asignado,Jueves,1,31
+Ingeniería Civil,2,CIN02303,Creatividad E Inventiva,PROF_HUMANIDADES,No_Asignado,Jueves,2,32
+Ingeniería Civil,2,FIS02405,Física I,PROF_FISICA_X,No_Asignado,Martes,0,10
+Ingeniería Civil,2,FIS02405,Física I,PROF_FISICA_X,No_Asignado,Martes,4,14
 Ingeniería Civil,2,FIS02405,Física I,PROF_FISICA_X,No_Asignado,Miércoles,1,21
+Ingeniería Civil,2,FIS02405,Física I,PROF_FISICA_X,No_Asignado,Miércoles,2,22
 Ingeniería Civil,2,FIS02405,Física I,PROF_FISICA_X,No_Asignado,Miércoles,3,23
-Ingeniería Civil,2,FIS02405,Física I,PROF_FISICA_X,No_Asignado,Miércoles,4,24
-Ingeniería Civil,2,FIS02405,Física I,PROF_FISICA_X,No_Asignado,Jueves,4,34
+Ingeniería Civil,2,GDS02203,Geometría Descriptiva,PROF_CIVIL_DISEÑO,No_Asignado,Jueves,6,36
+Ingeniería Civil,2,GDS02203,Geometría Descriptiva,PROF_CIVIL_DISEÑO,No_Asignado,Jueves,7,37
 Ingeniería Civil,2,GDS02203,Geometría Descriptiva,PROF_CIVIL_DISEÑO,No_Asignado,Jueves,8,38
-Ingeniería Civil,2,GDS02203,Geometría Descriptiva,PROF_CIVIL_DISEÑO,No_Asignado,Jueves,9,39
-Ingeniería Civil,2,GDS02203,Geometría Descriptiva,PROF_CIVIL_DISEÑO,No_Asignado,Viernes,9,49
+Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Lunes,3,3
+Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Lunes,4,4
 Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Lunes,5,5
+Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Lunes,6,6
 Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Jueves,0,30
-Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Jueves,1,31
-Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Jueves,2,32
-Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Jueves,3,33
 Ingeniería Civil,2,MAI02506,Matemática II,PROF_CIENCIAS_B,No_Asignado,Jueves,5,35
 Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Lunes,0,0
-Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Lunes,1,1
-Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Lunes,2,2
-Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Lunes,3,3
-Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Lunes,4,4
+Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Lunes,7,7
+Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Lunes,8,8
+Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Lunes,9,9
+Ingeniería Civil,2,PRO02305,Programación I,PROF_COMP_ALGO,No_Asignado,Miércoles,4,24

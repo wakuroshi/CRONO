@@ -18,16 +18,20 @@ CREATE TABLE IF NOT EXISTS solver_outputs (
     executed_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
--- Limpieza preventiva de datos estáticos previos para evitar duplicación/colisiones en el seed
-DELETE FROM model_entities WHERE period_id = '2026-1CR';
-DELETE FROM time_contexts WHERE id = '2026-1CR';
-
 INSERT INTO time_contexts (id, time_config)
 VALUES (
     '2026-1CR',
     '{
-        "dias": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"],
-        "slots_por_dia": 10,
+        "terminologia": {
+		"nivel_grupo_1": "Carrera",
+		"nivel_grupo_2": "Semestre",
+		"unidad_tarea": "Asignatura",
+		"unidad_agente": "Profesor"
+	},
+	"tiempo": {
+		"dias": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"],
+		"slots_por_dia": 10
+	},
         "solver": {
             "tiempo_max_segundos": 60.0,
             "penalizacion_dispersion": 150,
@@ -41,7 +45,7 @@ VALUES (
 INSERT INTO model_entities (period_id, entity_type, payload)
 VALUES (
     '2026-1CR',
-    'availability',
+    'disponibilidad_agentes',
     '{
         "PROF_DEPORTES": [0,1,2,3,4, 10,11,12,13,14, 20,21,22,23,24, 30,31,32,33,34, 40,41,42,43,44],
         "PROF_CIENCIAS_A": [5,6,7,8,9, 15,16,17,18,19, 25,26,27,28,29, 35,36,37,38,39, 45,46,47,48,49],
@@ -57,10 +61,11 @@ VALUES (
     }'
 );
 
+-- Entidad: asignacion_agentes
 INSERT INTO model_entities (period_id, entity_type, payload)
 VALUES (
     '2026-1CR',
-    'task_dependencies',
+    'asignacion_agentes',
     '{
         "EFS01202": "PROF_DEPORTES",
         "GAN01404": "PROF_CIENCIAS_A",
@@ -85,92 +90,94 @@ VALUES (
     }'
 );
 
+-- Estructura: Ingenieria Civil
 INSERT INTO model_entities (period_id, entity_type, payload)
 VALUES (
     '2026-1CR',
     'estructuras',
     '{
-        "career": "Ingeniería Civil",
-        "subgroups": [
+        "grupo": "Ingeniería Civil",
+        "subgrupos": [
             {
-                "number": 1,
-                "tasks": [
-                    { "id": "EFS01202", "name": "Educación Física Y Salud", "blocks": 2 },
-                    { "id": "GAN01404", "name": "Geometría Analítica", "blocks": 4 },
-                    { "id": "LOG01404", "name": "Lógica", "blocks": 4 },
-                    { "id": "MAI01506", "name": "Matemática I", "blocks": 6 },
-                    { "id": "VEC01202", "name": "Venezuela Contemporánea", "blocks": 2 }
+                "id": "1",
+                "tareas": [
+                    { "id": "EFS01202", "nombre": "Educación Física Y Salud", "bloques": 2 },
+                    { "id": "GAN01404", "nombre": "Geometría Analítica", "bloques": 4 },
+                    { "id": "LOG01404", "nombre": "Lógica", "bloques": 4 },
+                    { "id": "MAI01506", "nombre": "Matemática I", "bloques": 6 },
+                    { "id": "VEC01202", "nombre": "Venezuela Contemporánea", "bloques": 2 }
                 ]
             },
             {
-                "number": 2,
-                "tasks": [
-                    { "id": "ALI02304", "name": "Álgebra Lineal", "blocks": 4 },
-                    { "id": "CIN02303", "name": "Creatividad E Inventiva", "blocks": 3 },
-                    { "id": "FIS02405", "name": "Física I", "blocks": 5 },
-                    { "id": "GDS02203", "name": "Geometría Descriptiva", "blocks": 3 },
-                    { "id": "MAI02506", "name": "Matemática II", "blocks": 6 },
-                    { "id": "PRO02305", "name": "Programación I", "blocks": 5 }
+                "id": "2",
+                "tareas": [
+                    { "id": "ALI02304", "nombre": "Álgebra Lineal", "bloques": 4 },
+                    { "id": "CIN02303", "nombre": "Creatividad E Inventiva", "bloques": 3 },
+                    { "id": "FIS02405", "nombre": "Física I", "bloques": 5 },
+                    { "id": "GDS02203", "nombre": "Geometría Descriptiva", "bloques": 3 },
+                    { "id": "MAI02506", "nombre": "Matemática II", "bloques": 6 },
+                    { "id": "PRO02305", "nombre": "Programación I", "bloques": 5 }
                 ]
             },
             {
-                "number": 3,
-                "tasks": [
-                    { "id": "DIB03204", "name": "Dibujo", "blocks": 4, "recurso": "lab_computacion" },
-                    { "id": "EDI03304", "name": "Ecuaciones Diferenciales", "blocks": 4 },
-                    { "id": "FIS03405", "name": "Física II", "blocks": 5 },
-                    { "id": "IIN03202", "name": "Introducción a la Ingeniería", "blocks": 2 },
-                    { "id": "MAI03304", "name": "Matemática III", "blocks": 4 },
-                    { "id": "PRO03305", "name": "Programación II", "blocks": 5 }
+                "id": "3",
+                "tareas": [
+                    { "id": "DIB03204", "nombre": "Dibujo", "bloques": 4, "recurso": "lab_computacion" },
+                    { "id": "EDI03304", "nombre": "Ecuaciones Diferenciales", "bloques": 4 },
+                    { "id": "FIS03405", "nombre": "Física II", "bloques": 5 },
+                    { "id": "IIN03202", "nombre": "Introducción a la Ingeniería", "bloques": 2 },
+                    { "id": "MAI03304", "nombre": "Matemática III", "bloques": 4 },
+                    { "id": "PRO03305", "nombre": "Programación II", "bloques": 5 }
                 ]
             }
         ]
     }'
 );
 
+-- Estructura: Ingenieria de Computación
 INSERT INTO model_entities (period_id, entity_type, payload)
 VALUES (
     '2026-1CR',
     'estructuras',
     '{
-        "career": "Ingeniería de Computación",
-        "subgroups": [
+        "grupo": "Ingeniería de Computación",
+        "subgrupos": [
             {
-                "number": 1,
-                "tasks": [
-                    { "id": "EFS01202", "name": "Educación Física Y Salud", "blocks": 2 },
-                    { "id": "GAN01404", "name": "Geometría Analítica", "blocks": 4 },
-                    { "id": "LOG01404", "name": "Lógica", "blocks": 4 },
-                    { "id": "MAI01506", "name": "Matemática I", "blocks": 6 },
-                    { "id": "VEC01202", "name": "Venezuela Contemporánea", "blocks": 2 }
+                "id": "1",
+                "tareas": [
+                    { "id": "EFS01202", "nombre": "Educación Física Y Salud", "bloques": 2 },
+                    { "id": "GAN01404", "nombre": "Geometría Analítica", "bloques": 4 },
+                    { "id": "LOG01404", "nombre": "Lógica", "bloques": 4 },
+                    { "id": "MAI01506", "nombre": "Matemática I", "bloques": 6 },
+                    { "id": "VEC01202", "nombre": "Venezuela Contemporánea", "bloques": 2 }
                 ]
             },
             {
-                "number": 2,
-                "tasks": [
-                    { "id": "ALI02304", "name": "Álgebra Lineal", "blocks": 4 },
-                    { "id": "CIN02303", "name": "Creatividad E Inventiva", "blocks": 3 },
-                    { "id": "FIS02405", "name": "Física I", "blocks": 5 },
-                    { "id": "MAI02506", "name": "Matemática II", "blocks": 6 },
-                    { "id": "PRO02305", "name": "Programación I", "blocks": 5, "recurso": "lab_computacion" }
+                "id": "2",
+                "tareas": [
+                    { "id": "ALI02304", "nombre": "Álgebra Lineal", "bloques": 4 },
+                    { "id": "CIN02303", "nombre": "Creatividad E Inventiva", "bloques": 3 },
+                    { "id": "FIS02405", "nombre": "Física I", "bloques": 5 },
+                    { "id": "MAI02506", "nombre": "Matemática II", "bloques": 6 },
+                    { "id": "PRO02305", "nombre": "Programación I", "bloques": 5, "recurso": "lab_computacion" }
                 ]
             },
             {
-                "number": 3,
-                "tasks": [
-                    { "id": "ING03303", "name": "Inglés I", "blocks": 3 },
-                    { "id": "EDI03304", "name": "Ecuaciones Diferenciales", "blocks": 4 },
-                    { "id": "FIS03405", "name": "Física II", "blocks": 5 },
-                    { "id": "IIN03202", "name": "Introducción a la Ingeniería", "blocks": 2 },
-                    { "id": "MAI03304", "name": "Matemática III", "blocks": 4 },
-                    { "id": "PRO03305", "name": "Programación II", "blocks": 5, "recurso": "lab_computacion" }
+                "id": "3",
+                "tareas": [
+                    { "id": "ING03303", "nombre": "Inglés I", "bloques": 3 },
+                    { "id": "EDI03304", "nombre": "Ecuaciones Diferenciales", "bloques": 4 },
+                    { "id": "FIS03405", "nombre": "Física II", "bloques": 5 },
+                    { "id": "IIN03202", "nombre": "Introducción a la Ingeniería", "bloques": 2 },
+                    { "id": "MAI03304", "nombre": "Matemática III", "bloques": 4 },
+                    { "id": "PRO03305", "nombre": "Programación II", "bloques": 5, "recurso": "lab_computacion" }
                 ]
             },
             {
-                "number": 4,
-                "tasks": [
-                    { "id": "FEL04304", "name": "Fundamentos de Electrónica", "blocks": 4 },
-                    { "id": "PRO04405", "name": "Programación III", "blocks": 5, "recurso": "lab_computacion" }
+                "id": "4",
+                "tareas": [
+                    { "id": "FEL04304", "nombre": "Fundamentos de Electrónica", "bloques": 4 },
+                    { "id": "PRO04405", "nombre": "Programación III", "bloques": 5, "recurso": "lab_computacion" }
                 ]
             }
         ]

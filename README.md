@@ -1,4 +1,4 @@
-# CRONO - v1.0
+# CRONO - v1.1
 
 > **Constraint-based Rostering Organizer for Nodal Optimization**
 

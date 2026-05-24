@@ -120,7 +120,7 @@ def main():
                     cur.execute(f"SELECT payload FROM {TABLA_ENTIDADES} WHERE period_id = %s AND entity_type = 'disponibilidad_agentes';", (args.periodo,))
                     fila_disp = cur.fetchone()
                     if not fila_disp:
-                        print(f"Error Crítico: No se encontró la entidad 'disponibilidad_agentes' para el periodo '{args.periodo}' en la base de datos.", file=sys.stderr)
+                        print(f"Error Crítico: No se encontró la entidad 'disponibilidad_agentes' para el periodo '{args.periodo}' en la base de datos. Por favor, vuelve a sembrar (seed) tu base de datos.", file=sys.stderr)
                         sys.exit(1)
                     disponibilidad_agentes = fila_disp[0]
 
@@ -180,7 +180,7 @@ def main():
 
             for subgrupo_id, tareas in subgrupos.items():
                 base_filename = f"{grupo_tag}_{args.periodo}_SUB_{subgrupo_id}"
-
+                
                 # 1. ESCRITURA DEL ARCHIVO JSON (Fidelidad de Objeto/Estructura Árbol)
                 json_path = grupo_dir / f"{base_filename}.json"
                 try:
@@ -207,9 +207,9 @@ def main():
                         for tarea in tareas:
                             sid = tarea["id"]
                             nombre = tarea["nombre"]
-                            agente = tarea["agente"] if tarea["agente"] else "Ninguna"
+                            agente = tarea["dependencia"] if tarea["dependencia"] else "Ninguna"
                             recurso = tarea["recurso"] if tarea["recurso"] else "No_Asignado"
-
+                            
                             if tarea["horario"]:
                                 for bloque in tarea["horario"]:
                                     writer.writerow([

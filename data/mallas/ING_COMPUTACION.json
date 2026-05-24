@@ -1,42 +1,117 @@
 {
-  "estructura_nombre": "Ingeniería de Computación",
-  "subgroups": [
+  "grupo": "Ingeniería de Computación",
+  "subgrupos": [
     {
-      "number": 1,
-      "tasks": [
-        { "id": "EFS01202", "name": "Educación Física Y Salud", "blocks": 2 },
-        { "id": "GAN01404", "name": "Geometría Analítica", "blocks": 4 },
-        { "id": "LOG01404", "name": "Lógica", "blocks": 4 },
-        { "id": "MAI01506", "name": "Matemática I", "blocks": 6 },
-        { "id": "VEC01202", "name": "Venezuela Contemporánea", "blocks": 2 }
+      "id": "1",
+      "tareas": [
+        {
+          "id": "EFS01202",
+          "nombre": "Educación Física Y Salud",
+          "bloques": 2
+        },
+        {
+          "id": "GAN01404",
+          "nombre": "Geometría Analítica",
+          "bloques": 4
+        },
+        {
+          "id": "LOG01404",
+          "nombre": "Lógica",
+          "bloques": 4
+        },
+        {
+          "id": "MAI01506",
+          "nombre": "Matemática I",
+          "bloques": 6
+        },
+        {
+          "id": "VEC01202",
+          "nombre": "Venezuela Contemporánea",
+          "bloques": 2
+        }
       ]
     },
     {
-      "number": 2,
-      "tasks": [
-        { "id": "ALI02304", "name": "Álgebra Lineal", "blocks": 4 },
-        { "id": "CIN02303", "name": "Creatividad E Inventiva", "blocks": 3 },
-        { "id": "FIS02405", "name": "Física I", "blocks": 5 },
-        { "id": "MAI02506", "name": "Matemática II", "blocks": 6 },
-        { "id": "PRO02305", "name": "Programación I", "blocks": 5, "recurso": "lab_computacion" }
+      "id": "2",
+      "tareas": [
+        {
+          "id": "ALI02304",
+          "nombre": "Álgebra Lineal",
+          "bloques": 4
+        },
+        {
+          "id": "CIN02303",
+          "nombre": "Creatividad E Inventiva",
+          "bloques": 3
+        },
+        {
+          "id": "FIS02405",
+          "nombre": "Física I",
+          "bloques": 5
+        },
+        {
+          "id": "MAI02506",
+          "nombre": "Matemática II",
+          "bloques": 6
+        },
+        {
+          "id": "PRO02305",
+          "nombre": "Programación I",
+          "bloques": 5,
+          "recurso": "lab_computacion"
+        }
       ]
     },
     {
-      "number": 3,
-      "tasks": [
-        { "id": "ING03303", "name": "Inglés I", "blocks": 3 },
-        { "id": "EDI03304", "name": "Ecuaciones Diferenciales", "blocks": 4 },
-        { "id": "FIS03405", "name": "Física II", "blocks": 5 },
-        { "id": "IIN03202", "name": "Introducción a la Ingeniería", "blocks": 2 },
-        { "id": "MAI03304", "name": "Matemática III", "blocks": 4 },
-        { "id": "PRO03305", "name": "Programación II", "blocks": 5, "recurso": "lab_computacion" }
+      "id": "3",
+      "tareas": [
+        {
+          "id": "ING03303",
+          "nombre": "Inglés I",
+          "bloques": 3
+        },
+        {
+          "id": "EDI03304",
+          "nombre": "Ecuaciones Diferenciales",
+          "bloques": 4
+        },
+        {
+          "id": "FIS03405",
+          "nombre": "Física II",
+          "bloques": 5
+        },
+        {
+          "id": "IIN03202",
+          "nombre": "Introducción a la Ingeniería",
+          "bloques": 2
+        },
+        {
+          "id": "MAI03304",
+          "nombre": "Matemática III",
+          "bloques": 4
+        },
+        {
+          "id": "PRO03305",
+          "nombre": "Programación II",
+          "bloques": 5,
+          "recurso": "lab_computacion"
+        }
       ]
     },
     {
-      "number": 4,
-      "tasks": [
-        { "id": "FEL04304", "name": "Fundamentos de Electrónica", "blocks": 4 },
-        { "id": "PRO04405", "name": "Programación III", "blocks": 5, "recurso": "lab_computacion" }
+      "id": "4",
+      "tareas": [
+        {
+          "id": "FEL04304",
+          "nombre": "Fundamentos de Electrónica",
+          "bloques": 4
+        },
+        {
+          "id": "PRO04405",
+          "nombre": "Programación III",
+          "bloques": 5,
+          "recurso": "lab_computacion"
+        }
       ]
     }
   ]

@@ -64,6 +64,6 @@ CRONO/
 ```
 
 # TO-DO
-- [ ] (WIP) Finalizar CRONO[S]tudio, la implementación GUI first-party de CRONO.
+- [ ] (WIP) Finalizar CRONO[S]tudio, la implementación GUI first-party de CRONO. (https://codeberg.org/CausedCrawdad/Crono-Studio)
 - [ ] (WIP) Implementar totalmente flag --prereq que beneficia el solapamiento de tareas con su prerequisitos.
 - [ ] Bloques estáticos fijados por el usuario para bloquear horas fijas para ciertas tareas antes de que el solver optimice el resto del espacio.

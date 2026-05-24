@@ -1,0 +1,19 @@
+{
+  "terminologia": {
+    "nivel_grupo_1": "Area",
+    "nivel_grupo_2": "Equipo",
+    "unidad_tarea": "Tarea",
+    "unidad_recurso": "Operario"
+  },
+  "tiempo": {
+    "dias": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"],
+    "slots_por_dia": 10
+  },
+  "solver": {
+    "tiempo_max_segundos": 60.0,
+    "penalizacion_dispersion": 150,
+    "penalizacion_hueco": 50,
+    "penalizacion_max_dias": 1000,
+    "dias_objetivo_subgrupo": 4
+  }
+}

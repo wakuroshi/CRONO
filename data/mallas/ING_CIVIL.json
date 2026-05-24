@@ -1,36 +1,36 @@
 {
-  "career": "Ingeniería Civil",
-  "semesters": [
+  "estructura_nombre": "Ingeniería Civil",
+  "subgroups": [
     {
       "number": 1,
-      "subjects": [
-        { "id": "EFS01202", "name": "Educación Física Y Salud", "blocks": 2, "prereq": [] },
-        { "id": "GAN01404", "name": "Geometría Analítica", "blocks": 4, "prereq": [] },
-        { "id": "LOG01404", "name": "Lógica", "blocks": 4, "prereq": [] },
-        { "id": "MAI01506", "name": "Matemática I", "blocks": 6, "prereq": [] },
-        { "id": "VEC01202", "name": "Venezuela Contemporánea", "blocks": 2, "prereq": [] }
+      "tasks": [
+        { "id": "EFS01202", "name": "Educación Física Y Salud", "blocks": 2 },
+        { "id": "GAN01404", "name": "Geometría Analítica", "blocks": 4 },
+        { "id": "LOG01404", "name": "Lógica", "blocks": 4 },
+        { "id": "MAI01506", "name": "Matemática I", "blocks": 6 },
+        { "id": "VEC01202", "name": "Venezuela Contemporánea", "blocks": 2 }
       ]
     },
     {
       "number": 2,
-      "subjects": [
-        { "id": "ALI02304", "name": "Álgebra Lineal", "blocks": 4, "prereq": ["GAN01404"] },
-        { "id": "CIN02303", "name": "Creatividad E Inventiva", "blocks": 3, "prereq": ["LOG01404"] },
-        { "id": "FIS02405", "name": "Física I", "blocks": 5, "prereq": ["GAN01404", "MAI01506"] },
-        { "id": "GDS02203", "name": "Geometría Descriptiva", "blocks": 3, "prereq": ["GAN01404"] },
-        { "id": "MAI02506", "name": "Matemática II", "blocks": 6, "prereq": ["MAI01506"] },
-        { "id": "PRO02305", "name": "Programación I", "blocks": 5, "prereq": [] }
+      "tasks": [
+        { "id": "ALI02304", "name": "Álgebra Lineal", "blocks": 4 },
+        { "id": "CIN02303", "name": "Creatividad E Inventiva", "blocks": 3 },
+        { "id": "FIS02405", "name": "Física I", "blocks": 5 },
+        { "id": "GDS02203", "name": "Geometría Descriptiva", "blocks": 3 },
+        { "id": "MAI02506", "name": "Matemática II", "blocks": 6 },
+        { "id": "PRO02305", "name": "Programación I", "blocks": 5 }
       ]
     },
     {
       "number": 3,
-      "subjects": [
-        { "id": "DIB03204", "name": "Dibujo", "blocks": 4, "prereq": ["GDS02203"], "recurso": "lab_computacion" },
-        { "id": "EDI03304", "name": "Ecuaciones Diferenciales", "blocks": 4, "prereq": ["MAI02506", "ALI02304"] },
-        { "id": "FIS03405", "name": "Física II", "blocks": 5, "prereq": ["FIS02405"] },
-        { "id": "IIN03202", "name": "Introducción a la Ingeniería", "blocks": 2, "prereq": [] },
-        { "id": "MAI03304", "name": "Matemática III", "blocks": 4, "prereq": ["MAI02506"] },
-        { "id": "PRO03305", "name": "Programación II", "blocks": 5, "prereq": ["PRO02305"] }
+      "tasks": [
+        { "id": "DIB03204", "name": "Dibujo", "blocks": 4, "recurso": "lab_computacion" },
+        { "id": "EDI03304", "name": "Ecuaciones Diferenciales", "blocks": 4 },
+        { "id": "FIS03405", "name": "Física II", "blocks": 5 },
+        { "id": "IIN03202", "name": "Introducción a la Ingeniería", "blocks": 2 },
+        { "id": "MAI03304", "name": "Matemática III", "blocks": 4 },
+        { "id": "PRO03305", "name": "Programación II", "blocks": 5 }
       ]
     }
   ]

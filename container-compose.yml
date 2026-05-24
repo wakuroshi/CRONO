@@ -1,0 +1,27 @@
+name: crono-stack
+
+services:
+  crono-db:
+    image: docker.io/library/postgres:16-alpine
+    container_name: crono-db
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    # 👇 Con esto, el contenedor usa la red de tu PC y ya no necesita modificar iptables
+    network_mode: "host" 
+    volumes:
+      - crono_db_data:/var/lib/postgresql/data
+      - ./infra/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  crono_db_data:
+    driver: local

@@ -10,24 +10,24 @@
       "recurso": null,
       "horario": [
         {
-          "index": 18,
-          "dia": "Martes",
-          "bloque_id": 8
+          "index": 6,
+          "dia": "Lunes",
+          "bloque_id": 6
         },
         {
-          "index": 19,
-          "dia": "Martes",
-          "bloque_id": 9
+          "index": 25,
+          "dia": "Miércoles",
+          "bloque_id": 5
+        },
+        {
+          "index": 26,
+          "dia": "Miércoles",
+          "bloque_id": 6
         },
         {
           "index": 27,
           "dia": "Miércoles",
           "bloque_id": 7
-        },
-        {
-          "index": 28,
-          "dia": "Miércoles",
-          "bloque_id": 8
         }
       ]
     },
@@ -38,18 +38,18 @@
       "recurso": null,
       "horario": [
         {
-          "index": 11,
-          "dia": "Martes",
+          "index": 22,
+          "dia": "Miércoles",
+          "bloque_id": 2
+        },
+        {
+          "index": 41,
+          "dia": "Viernes",
           "bloque_id": 1
         },
         {
-          "index": 31,
-          "dia": "Jueves",
-          "bloque_id": 1
-        },
-        {
-          "index": 32,
-          "dia": "Jueves",
+          "index": 42,
+          "dia": "Viernes",
           "bloque_id": 2
         }
       ]
@@ -61,14 +61,9 @@
       "recurso": null,
       "horario": [
         {
-          "index": 10,
-          "dia": "Martes",
+          "index": 20,
+          "dia": "Miércoles",
           "bloque_id": 0
-        },
-        {
-          "index": 14,
-          "dia": "Martes",
-          "bloque_id": 4
         },
         {
           "index": 21,
@@ -76,14 +71,19 @@
           "bloque_id": 1
         },
         {
-          "index": 22,
-          "dia": "Miércoles",
-          "bloque_id": 2
-        },
-        {
           "index": 23,
           "dia": "Miércoles",
           "bloque_id": 3
+        },
+        {
+          "index": 24,
+          "dia": "Miércoles",
+          "bloque_id": 4
+        },
+        {
+          "index": 34,
+          "dia": "Jueves",
+          "bloque_id": 4
         }
       ]
     },
@@ -94,19 +94,19 @@
       "recurso": null,
       "horario": [
         {
-          "index": 36,
-          "dia": "Jueves",
-          "bloque_id": 6
-        },
-        {
-          "index": 37,
-          "dia": "Jueves",
-          "bloque_id": 7
-        },
-        {
           "index": 38,
           "dia": "Jueves",
           "bloque_id": 8
+        },
+        {
+          "index": 39,
+          "dia": "Jueves",
+          "bloque_id": 9
+        },
+        {
+          "index": 49,
+          "dia": "Viernes",
+          "bloque_id": 9
         }
       ]
     },
@@ -117,29 +117,29 @@
       "recurso": null,
       "horario": [
         {
-          "index": 3,
-          "dia": "Lunes",
-          "bloque_id": 3
-        },
-        {
-          "index": 4,
-          "dia": "Lunes",
-          "bloque_id": 4
-        },
-        {
           "index": 5,
           "dia": "Lunes",
           "bloque_id": 5
         },
         {
-          "index": 6,
-          "dia": "Lunes",
-          "bloque_id": 6
-        },
-        {
           "index": 30,
           "dia": "Jueves",
           "bloque_id": 0
+        },
+        {
+          "index": 31,
+          "dia": "Jueves",
+          "bloque_id": 1
+        },
+        {
+          "index": 32,
+          "dia": "Jueves",
+          "bloque_id": 2
+        },
+        {
+          "index": 33,
+          "dia": "Jueves",
+          "bloque_id": 3
         },
         {
           "index": 35,
@@ -160,23 +160,23 @@
           "bloque_id": 0
         },
         {
-          "index": 7,
+          "index": 1,
           "dia": "Lunes",
-          "bloque_id": 7
+          "bloque_id": 1
         },
         {
-          "index": 8,
+          "index": 2,
           "dia": "Lunes",
-          "bloque_id": 8
+          "bloque_id": 2
         },
         {
-          "index": 9,
+          "index": 3,
           "dia": "Lunes",
-          "bloque_id": 9
+          "bloque_id": 3
         },
         {
-          "index": 24,
-          "dia": "Miércoles",
+          "index": 4,
+          "dia": "Lunes",
           "bloque_id": 4
         }
       ]

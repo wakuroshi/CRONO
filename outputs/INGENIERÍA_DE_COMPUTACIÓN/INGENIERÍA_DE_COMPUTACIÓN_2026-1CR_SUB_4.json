@@ -25,9 +25,9 @@
           "bloque_id": 3
         },
         {
-          "index": 20,
-          "dia": "Miércoles",
-          "bloque_id": 0
+          "index": 14,
+          "dia": "Martes",
+          "bloque_id": 4
         }
       ]
     },
@@ -37,6 +37,11 @@
       "agente": "PROF_COMP_AVANZADA",
       "recurso": "lab_computacion",
       "horario": [
+        {
+          "index": 35,
+          "dia": "Jueves",
+          "bloque_id": 5
+        },
         {
           "index": 36,
           "dia": "Jueves",
@@ -50,11 +55,6 @@
         {
           "index": 38,
           "dia": "Jueves",
-          "bloque_id": 8
-        },
-        {
-          "index": 48,
-          "dia": "Viernes",
           "bloque_id": 8
         },
         {

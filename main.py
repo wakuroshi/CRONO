@@ -113,7 +113,7 @@ def main():
                         print(f"Error: El periodo '{args.periodo}' no existe en la base de datos.", file=sys.stderr)
                         sys.exit(1)
                     t_data = period_row[0]
-                    config = TimeConfig(dias=t_data["dias"], slots_por_dia=t_data["slots_por_dia"])
+                    config = TimeConfig(dias=t_data["tiempo"]["dias"], slots_por_dia=t_data["tiempo"]["slots_por_dia"])
                     solver_config = t_data.get("solver")
 
                     # Consulta 2: Disponibilidad general (Nomenclatura Nueva)

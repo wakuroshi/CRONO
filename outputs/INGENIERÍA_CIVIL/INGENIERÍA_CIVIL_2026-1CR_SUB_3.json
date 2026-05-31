@@ -10,11 +10,6 @@
       "recurso": "lab_computacion",
       "horario": [
         {
-          "index": 39,
-          "dia": "Jueves",
-          "bloque_id": 9
-        },
-        {
           "index": 45,
           "dia": "Viernes",
           "bloque_id": 5
@@ -28,6 +23,11 @@
           "index": 47,
           "dia": "Viernes",
           "bloque_id": 7
+        },
+        {
+          "index": 48,
+          "dia": "Viernes",
+          "bloque_id": 8
         }
       ]
     },
@@ -38,24 +38,24 @@
       "recurso": null,
       "horario": [
         {
-          "index": 5,
-          "dia": "Lunes",
-          "bloque_id": 5
-        },
-        {
-          "index": 6,
-          "dia": "Lunes",
-          "bloque_id": 6
-        },
-        {
-          "index": 7,
-          "dia": "Lunes",
+          "index": 17,
+          "dia": "Martes",
           "bloque_id": 7
         },
         {
-          "index": 35,
+          "index": 18,
+          "dia": "Martes",
+          "bloque_id": 8
+        },
+        {
+          "index": 19,
+          "dia": "Martes",
+          "bloque_id": 9
+        },
+        {
+          "index": 39,
           "dia": "Jueves",
-          "bloque_id": 5
+          "bloque_id": 9
         }
       ]
     },
@@ -81,14 +81,14 @@
           "bloque_id": 3
         },
         {
-          "index": 34,
-          "dia": "Jueves",
-          "bloque_id": 4
+          "index": 40,
+          "dia": "Viernes",
+          "bloque_id": 0
         },
         {
-          "index": 44,
+          "index": 41,
           "dia": "Viernes",
-          "bloque_id": 4
+          "bloque_id": 1
         }
       ]
     },
@@ -99,9 +99,9 @@
       "recurso": null,
       "horario": [
         {
-          "index": 22,
-          "dia": "Miércoles",
-          "bloque_id": 2
+          "index": 11,
+          "dia": "Martes",
+          "bloque_id": 1
         },
         {
           "index": 31,
@@ -117,33 +117,10 @@
       "recurso": null,
       "horario": [
         {
-          "index": 0,
-          "dia": "Lunes",
-          "bloque_id": 0
-        },
-        {
-          "index": 1,
-          "dia": "Lunes",
-          "bloque_id": 1
-        },
-        {
           "index": 2,
           "dia": "Lunes",
           "bloque_id": 2
         },
-        {
-          "index": 8,
-          "dia": "Lunes",
-          "bloque_id": 8
-        }
-      ]
-    },
-    {
-      "id": "PRO03305",
-      "nombre": "Programación II",
-      "agente": "PROF_COMP_ALGO",
-      "recurso": null,
-      "horario": [
         {
           "index": 3,
           "dia": "Lunes",
@@ -155,18 +132,41 @@
           "bloque_id": 4
         },
         {
-          "index": 20,
-          "dia": "Miércoles",
+          "index": 34,
+          "dia": "Jueves",
+          "bloque_id": 4
+        }
+      ]
+    },
+    {
+      "id": "PRO03305",
+      "nombre": "Programación II",
+      "agente": "PROF_COMP_ALGO",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 8,
+          "dia": "Lunes",
+          "bloque_id": 8
+        },
+        {
+          "index": 9,
+          "dia": "Lunes",
+          "bloque_id": 9
+        },
+        {
+          "index": 10,
+          "dia": "Martes",
           "bloque_id": 0
         },
         {
-          "index": 21,
-          "dia": "Miércoles",
-          "bloque_id": 1
+          "index": 12,
+          "dia": "Martes",
+          "bloque_id": 2
         },
         {
-          "index": 23,
-          "dia": "Miércoles",
+          "index": 13,
+          "dia": "Martes",
           "bloque_id": 3
         }
       ]

@@ -10,14 +10,14 @@
       "recurso": null,
       "horario": [
         {
-          "index": 11,
+          "index": 13,
           "dia": "Martes",
-          "bloque_id": 1
+          "bloque_id": 3
         },
         {
-          "index": 12,
+          "index": 14,
           "dia": "Martes",
-          "bloque_id": 2
+          "bloque_id": 4
         }
       ]
     },
@@ -28,24 +28,24 @@
       "recurso": null,
       "horario": [
         {
-          "index": 25,
-          "dia": "Miércoles",
+          "index": 15,
+          "dia": "Martes",
           "bloque_id": 5
         },
         {
-          "index": 26,
+          "index": 16,
+          "dia": "Martes",
+          "bloque_id": 6
+        },
+        {
+          "index": 28,
           "dia": "Miércoles",
-          "bloque_id": 6
+          "bloque_id": 8
         },
         {
-          "index": 45,
-          "dia": "Viernes",
-          "bloque_id": 5
-        },
-        {
-          "index": 46,
-          "dia": "Viernes",
-          "bloque_id": 6
+          "index": 29,
+          "dia": "Miércoles",
+          "bloque_id": 9
         }
       ]
     },
@@ -56,9 +56,14 @@
       "recurso": null,
       "horario": [
         {
-          "index": 21,
+          "index": 20,
           "dia": "Miércoles",
-          "bloque_id": 1
+          "bloque_id": 0
+        },
+        {
+          "index": 23,
+          "dia": "Miércoles",
+          "bloque_id": 3
         },
         {
           "index": 40,
@@ -66,14 +71,9 @@
           "bloque_id": 0
         },
         {
-          "index": 41,
+          "index": 43,
           "dia": "Viernes",
-          "bloque_id": 1
-        },
-        {
-          "index": 42,
-          "dia": "Viernes",
-          "bloque_id": 2
+          "bloque_id": 3
         }
       ]
     },
@@ -84,34 +84,34 @@
       "recurso": null,
       "horario": [
         {
-          "index": 13,
-          "dia": "Martes",
-          "bloque_id": 3
+          "index": 0,
+          "dia": "Lunes",
+          "bloque_id": 0
         },
         {
-          "index": 14,
-          "dia": "Martes",
-          "bloque_id": 4
-        },
-        {
-          "index": 31,
-          "dia": "Jueves",
+          "index": 1,
+          "dia": "Lunes",
           "bloque_id": 1
         },
         {
-          "index": 32,
-          "dia": "Jueves",
-          "bloque_id": 2
+          "index": 6,
+          "dia": "Lunes",
+          "bloque_id": 6
         },
         {
-          "index": 33,
-          "dia": "Jueves",
-          "bloque_id": 3
+          "index": 7,
+          "dia": "Lunes",
+          "bloque_id": 7
         },
         {
-          "index": 34,
-          "dia": "Jueves",
-          "bloque_id": 4
+          "index": 8,
+          "dia": "Lunes",
+          "bloque_id": 8
+        },
+        {
+          "index": 11,
+          "dia": "Martes",
+          "bloque_id": 1
         }
       ]
     },
@@ -122,13 +122,13 @@
       "recurso": null,
       "horario": [
         {
-          "index": 20,
-          "dia": "Miércoles",
+          "index": 10,
+          "dia": "Martes",
           "bloque_id": 0
         },
         {
-          "index": 22,
-          "dia": "Miércoles",
+          "index": 12,
+          "dia": "Martes",
           "bloque_id": 2
         }
       ]

@@ -1,0 +1,185 @@
+{
+  "grupo_raiz": "Ingeniería Civil",
+  "periodo": "2026-1CR",
+  "subgrupo": "2",
+  "results": [
+    {
+      "id": "ALI02304",
+      "nombre": "Álgebra Lineal",
+      "agente": "PROF_CIENCIAS_A",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 6,
+          "dia": "Lunes",
+          "bloque_id": 6
+        },
+        {
+          "index": 25,
+          "dia": "Miércoles",
+          "bloque_id": 5
+        },
+        {
+          "index": 26,
+          "dia": "Miércoles",
+          "bloque_id": 6
+        },
+        {
+          "index": 27,
+          "dia": "Miércoles",
+          "bloque_id": 7
+        }
+      ]
+    },
+    {
+      "id": "CIN02303",
+      "nombre": "Creatividad E Inventiva",
+      "agente": "PROF_HUMANIDADES",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 22,
+          "dia": "Miércoles",
+          "bloque_id": 2
+        },
+        {
+          "index": 41,
+          "dia": "Viernes",
+          "bloque_id": 1
+        },
+        {
+          "index": 42,
+          "dia": "Viernes",
+          "bloque_id": 2
+        }
+      ]
+    },
+    {
+      "id": "FIS02405",
+      "nombre": "Física I",
+      "agente": "PROF_FISICA_X",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 20,
+          "dia": "Miércoles",
+          "bloque_id": 0
+        },
+        {
+          "index": 21,
+          "dia": "Miércoles",
+          "bloque_id": 1
+        },
+        {
+          "index": 23,
+          "dia": "Miércoles",
+          "bloque_id": 3
+        },
+        {
+          "index": 24,
+          "dia": "Miércoles",
+          "bloque_id": 4
+        },
+        {
+          "index": 34,
+          "dia": "Jueves",
+          "bloque_id": 4
+        }
+      ]
+    },
+    {
+      "id": "GDS02203",
+      "nombre": "Geometría Descriptiva",
+      "agente": "PROF_CIVIL_DISEÑO",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 38,
+          "dia": "Jueves",
+          "bloque_id": 8
+        },
+        {
+          "index": 39,
+          "dia": "Jueves",
+          "bloque_id": 9
+        },
+        {
+          "index": 49,
+          "dia": "Viernes",
+          "bloque_id": 9
+        }
+      ]
+    },
+    {
+      "id": "MAI02506",
+      "nombre": "Matemática II",
+      "agente": "PROF_CIENCIAS_B",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 5,
+          "dia": "Lunes",
+          "bloque_id": 5
+        },
+        {
+          "index": 30,
+          "dia": "Jueves",
+          "bloque_id": 0
+        },
+        {
+          "index": 31,
+          "dia": "Jueves",
+          "bloque_id": 1
+        },
+        {
+          "index": 32,
+          "dia": "Jueves",
+          "bloque_id": 2
+        },
+        {
+          "index": 33,
+          "dia": "Jueves",
+          "bloque_id": 3
+        },
+        {
+          "index": 35,
+          "dia": "Jueves",
+          "bloque_id": 5
+        }
+      ]
+    },
+    {
+      "id": "PRO02305",
+      "nombre": "Programación I",
+      "agente": "PROF_COMP_ALGO",
+      "recurso": null,
+      "horario": [
+        {
+          "index": 0,
+          "dia": "Lunes",
+          "bloque_id": 0
+        },
+        {
+          "index": 1,
+          "dia": "Lunes",
+          "bloque_id": 1
+        },
+        {
+          "index": 2,
+          "dia": "Lunes",
+          "bloque_id": 2
+        },
+        {
+          "index": 3,
+          "dia": "Lunes",
+          "bloque_id": 3
+        },
+        {
+          "index": 4,
+          "dia": "Lunes",
+          "bloque_id": 4
+        }
+      ]
+    }
+  ]
+}

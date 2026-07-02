@@ -1,4 +1,8 @@
-# CRONO - v1.1
+# CRONO
+
+[![Codeberg](https://img.shields.io/badge/Maintained_on-Codeberg-708090?style=square&logo=git&logoColor=white)](https://codeberg.org/wirtnel/CRONO)
+
+[![GitHub Mirror](https://img.shields.io/badge/Mirror_on-GitHub-24292e?style=flat-square&logo=github&logoColor=white)](https://github.com/wirtnel/CRONO)
 
 > **Constraint-based Rostering Organizer for Nodal Optimization**
 
@@ -8,7 +12,7 @@ El motor evalúa de forma simultánea múltiples mallas curriculares, dependenci
 
 ---
 
-## Características Clave de la v1.0
+## Características Clave
 
 * **Arquitectura de Persistencia Híbrida:** Capacidad de operar de forma aislada mediante sistemas de archivos locales (`JSON`) o en entornos de red distribuidos mediante conectividad nativa a bases de datos relacionales (`PostgreSQL` con tipos binarios `JSONB`).
 * **Optimización Parametrizada Dinámica:** Control total de los pesos de las penalizaciones (*soft constraints*) y umbrales de días objetivos mediante archivos de configuración personalizados para cada periodo `config.json`) sin necesidad de recompilar el modelo matemático.
@@ -29,9 +33,9 @@ pip install -r requirements.txt
 
 ## Uso
 
-CRONO v1.0 expande su usabilidad CLI para dos modos de uso según la infraestructura:
+CRONO ofrece un CLI para dos modos de uso según la infraestructura:
 
-* **`--periodo <ID>` (Requerido):** Establece el contexto de tiempo para la ejecución. 
+* **`--periodo <ID>` (Requerido):** Establece el contexto de tiempo para la ejecución.
   * *En modo de producción:* Actúa como clave primaria (`PK`) para consultar las tablas `schedule_periods` y `entities_metadata`.
   * *En modo local:* Define el nombre de la carpeta dentro de `data/periodos/` desde donde se cargarán los archivos JSON.
 

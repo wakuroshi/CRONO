@@ -216,10 +216,10 @@ def main():
                 try:
                     with open(csv_path, mode='w', newline='', encoding='utf-8') as f_csv:
                         writer = csv.writer(f_csv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-                        
+
                         # Escribir Cabecera (Esquema Tabular)
                         writer.writerow(["Grupo_Raiz", "Subgrupo", "Tarea_ID", "Tarea_Nombre", "Dependencia", "Recurso", "Dia", "Bloque_ID", "Index_Absoluto"])
-                        
+
                         # Desenrollar el árbol en filas planas (Relación 1:N con los bloques de tiempo)
                         for tarea in tareas:
                             sid = tarea["id"]
